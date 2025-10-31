@@ -1,5 +1,6 @@
 # 🎬 Test and compare thumbnails
 📹 Reference: https://youtu.be/Y5bKOrlVm1Y
+https://support.google.com/youtube/answer/13861714?hl=en-GB
 
 You can compare the performance of up to three video thumbnails to gain insights that help you with your content strategy. 📊 **Thumbnails must follow our community guidelines or your access to the feature may be removed.**
 
