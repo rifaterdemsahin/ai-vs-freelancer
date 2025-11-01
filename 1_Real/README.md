@@ -19,7 +19,9 @@ Define **what success looks like** for this project. Every decision, implementat
 ### Four Main Objectives:
 
 1. **Maximize Content Discovery and Click-Through Performance**
-   - Target: Improve Thumbnail CTR by 25%
+   - Target: Improve Thumbnail CTR compared to previous thumbnails
+   - Focus: Enhance video titles, descriptions, tags, and thumbnail images
+   - Segments: All audiences across all videos
    - Method: A/B testing with YouTube's built-in feature
    - Success Metric: YouTube Analytics comparison
 
