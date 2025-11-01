@@ -383,6 +383,7 @@
         <div class="header">
             <h1>🎯 Workflow Assessment Tool</h1>
             <p>Discover whether AI, Human, or Hybrid is right for your project</p>
+            <a href="index.html" class="btn btn-secondary" style="margin-top: 20px;">Back to Home</a>
         </div>
 
         <div class="assessment-card">
@@ -970,27 +971,5 @@
         }
 
         function restartAssessment() {
-            currentQuestion = 1;
-            answers = {};
-            scores = { ai: 0, human: 0, hybrid: 0 };
-            
-            document.getElementById('results').classList.remove('active');
-            document.getElementById('navButtons').style.display = 'flex';
-            document.querySelector('.progress-indicator').style.display = 'flex';
-            
-            document.querySelectorAll('.question-container').forEach(q => {
-                q.classList.remove('active');
-                q.querySelectorAll('.option').forEach(opt => opt.classList.remove('selected'));
-            });
-            
-            document.querySelectorAll('.progress-step').forEach(step => {
-                step.classList.remove('active', 'completed');
-            });
-            
-            document.getElementById('q1').classList.add('active');
-            document.getElementById('step1').classList.add('active');
-            document.getElementById('progressFill').style.width = '0%';
-            document.getElementById('nextBtn').disabled = true;
-            document.getElementById('prevBtn').style.display = 'none';
-            document.getElementById('nextBtn').textContent = 'Next →';
+            window.location.href = "index.html";
         }

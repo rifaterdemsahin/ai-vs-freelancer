@@ -1,3 +1,6 @@
+Visible > https://rifaterdemsahin.github.io/ai-vs-freelancer/
+
+
 # 🚀 Delivery Pilot Structure
 
 This project uses a **seven-folder structure** representing a holistic development journey. Each folder has a specific purpose and guides a structured workflow.
