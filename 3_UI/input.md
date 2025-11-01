@@ -33,7 +33,7 @@ Used as **Variant A** in our first A/B test to establish whether professional de
 
 **Why This Matters:**
 - **Professional Quality:** Human creativity and design expertise apply design principles AI might miss
-- **Brand Consistency:** Freelancer (Yanaure) aligns design with channel identity
+- **Brand Consistency:** Freelancer (Yeanur Alam) aligns design with channel identity
 - **Emotional Design:** Purposeful use of psychology to drive engagement
 - **Testing Variable:** Directly comparable to AI version for CTR impact
 

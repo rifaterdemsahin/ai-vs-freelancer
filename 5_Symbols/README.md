@@ -49,7 +49,7 @@ This folder contains:
 │   │   └── README.md
 │   ├── thumbnails_freelancer/
 │   │   ├── test_01_freelancer_variant_b.png
-│   │   ├── yanaure_nour_variants/
+│   │   ├── Yeanur Alam_nour_variants/
 │   │   └── README.md
 │   ├── video_project_files/
 │   │   ├── final_exports/
@@ -100,7 +100,7 @@ creative_assets/thumbnails_ai/
 **Freelancer-Designed Thumbnails:**
 ```
 creative_assets/thumbnails_freelancer/
-├── yanaure_nour_variants/
+├── Yeanur Alam_nour_variants/
 │   ├── test_01_freelancer_variant_b.png
 │   ├── test_02_freelancer_variant_b.png
 │   ├── test_03_freelancer_variant_b.png
@@ -136,8 +136,8 @@ ab_tests/test_01_baseline/
 │   - File: thumbnails_ai/test_01_ai_variant_a.png
 │   
 │   Variant B (Treatment): Professional freelancer design
-│   - Designer: Yanaure (Nour)
-│   - File: thumbnails_freelancer/yanaure_nour_variants/test_01_freelancer_variant_b.png
+│   - Designer: Yeanur Alam (Nour)
+│   - File: thumbnails_freelancer/Yeanur Alam_nour_variants/test_01_freelancer_variant_b.png
 │   - Cost: $20 (contingent on win)
 │   ```
 ├── performance_data.csv
@@ -167,7 +167,7 @@ ab_tests/test_01_baseline/
     Victory Margin: +9.4%
     Statistically Significant: YES
     
-    Payment Due: YES - $20 to Yanaure
+    Payment Due: YES - $20 to Yeanur Alam
     Payment Status: [Pending/Processed]
     
     Design Analysis:

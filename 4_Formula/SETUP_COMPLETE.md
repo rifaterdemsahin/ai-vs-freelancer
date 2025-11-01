@@ -76,7 +76,7 @@ Contains your strategic objectives for Q4 2025:
 
 Contains everything you need to understand the execution path:
 - Timeline through December 31, 2025
-- Service agreement with Yanaure ($20 contingent payment)
+- Service agreement with Yeanur Alam ($20 contingent payment)
 - Target audience (professionals 22-45, tech, global)
 - Strategic use cases and content pillars
 

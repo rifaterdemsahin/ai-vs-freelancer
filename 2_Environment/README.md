@@ -10,7 +10,7 @@ Translate objectives into an actionable roadmap. Define **how we'll get there** 
 
 ## 📄 Contents
 
-- `service_agreement.md` — A/B testing contract with service provider (Yanaure/Nour)
+- `service_agreement.md` — A/B testing contract with service provider (Yeanur Alam/Nour)
 - `target_audience.md` — Target demographic and user personas
 - `demographics.md` — Detailed audience analysis and market insights
 - Milestones and timeline
@@ -73,7 +73,7 @@ Translate objectives into an actionable roadmap. Define **how we'll get there** 
 **User Story:** As a channel owner, I want to compare my AI thumbnail against a professional freelancer's design to determine if paying $20 is worth the performance gain.
 
 **Steps:**
-1. Receive professional thumbnail from Yanaure
+1. Receive professional thumbnail from Yeanur Alam
 2. Upload both thumbnails to YouTube A/B test feature
 3. Run test for 14 days with target video
 4. Collect performance data (CTR, impressions, clicks)

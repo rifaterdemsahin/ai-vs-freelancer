@@ -29,7 +29,7 @@ This project structure guides every phase from planning through validation. **Re
 ### **2_Environment** — How We'll Get There
 🗺️ **Purpose:** Plan the journey  
 📂 **Key Files:** 
-- `service_agreement.md` — Contract with Yanaure/Nour
+- `service_agreement.md` — Contract with Yeanur Alam/Nour
 - `target_audience.md` — Who we're serving
 - `demographics.md` — Audience insights
 
@@ -216,7 +216,7 @@ This project structure guides every phase from planning through validation. **Re
 **First A/B Test Progress:**
 - Video: [Last video as of Oct 27]
 - Variant A: AI-generated thumbnail
-- Variant B: Yanaure (Nour) professional design
+- Variant B: Yeanur Alam (Nour) professional design
 - Cost: $20 (contingent on winning)
 - Duration: ~14 days
 
@@ -339,7 +339,7 @@ Each phase builds on the previous, creating a continuous improvement cycle.
 - **Timeline:** Q4 2025 (Oct 27 - Dec 31, 2025)
 - **Primary Goal:** Compare AI-generated vs. professionally designed thumbnails
 - **Success Metric:** CTR improvement of 25%+
-- **Key Stakeholders:** Rifat (Channel Owner), Yanaure (Service Provider)
+- **Key Stakeholders:** Rifat (Channel Owner), Yeanur Alam (Service Provider)
 - **Last Updated:** October 31, 2025
 
 ---

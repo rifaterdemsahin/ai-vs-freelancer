@@ -2,9 +2,9 @@ Here is a service agreement based on the meeting summary provided.
 Thumbnail A/B Test Service Agreement
 This Agreement is entered into and effective as of October 27, 2025 (the "Effective Date"), by and between:
 1.⁠ ⁠The Parties
- * The Client: Rifat (also referred to as "Mr. Iphard" / "Difat"), the owner of the YouTube channel.
+ * The Client: Rifat (also referred to as "Mr. Rifat Erdem Sahin", also known as "Rifat"), the owner of the YouTube channel.
    (Hereinafter referred to as the "Client")
- * The Provider: Yanaure (Nour), representing their team including Tarek.
+ * The Provider: ~Yeanur Alam  (Nour), representing their team including Tarek.
    (Hereinafter referred to as the "Provider")
 2.⁠ ⁠Background & Purpose
 Following a meeting on October 27, 2025, the Client expressed interest in testing the Provider's thumbnail design services. The Provider offered a "skin in the game" proposal to demonstrate the value of their service.
@@ -36,5 +36,5 @@ Printed Name: Rifat
 Date: _______________________
 For the Provider:
 Signature: _______________________
-Printed Name: Yanaure (Nour)
+Printed Name: Yeanur Alam (Nour)
 Date: _______________________

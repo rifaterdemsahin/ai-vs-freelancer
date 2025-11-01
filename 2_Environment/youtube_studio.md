@@ -97,7 +97,7 @@ Track and analyze YouTube channel performance against project OKRs. This documen
 - **Test Duration:** 14 days (Oct 31 - Nov 14, 2025)
 - **Video:** [Video Title TBD]
 - **Variant A:** AI-Generated Thumbnail (Baseline)
-- **Variant B:** Professionally Designed Thumbnail (Freelancer: Yanaure)
+- **Variant B:** Professionally Designed Thumbnail (Freelancer: Yeanur Alam)
 - **Primary Metric:** CTR (Click-Through Rate)
 - **Success Criteria:** Variant B wins if CTR > Variant A by +5%
 
@@ -151,7 +151,7 @@ Track and analyze YouTube channel performance against project OKRs. This documen
 
 | Test # | Freelancer | Investment | Result | Revenue Impact | ROI | Decision |
 |--------|-----------|-----------|--------|-----------------|-----|----------|
-| 1 | Yanaure (Thumbnail) | $20 | TBD | TBD | TBD | 🔲 Pending |
+| 1 | Yeanur Alam (Thumbnail) | $20 | TBD | TBD | TBD | 🔲 Pending |
 | 2 | [TBD] | [TBD] | TBD | TBD | TBD | 🔲 Planned |
 | 3 | [TBD] | [TBD] | TBD | TBD | TBD | 🔲 Planned |
 

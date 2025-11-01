@@ -242,7 +242,7 @@ All folder READMEs include:
 | Roadmap Created | ✅ Complete | Framework | Timeline through Dec 31 |
 | Service Agreement | ✅ Complete | Framework | $20 contingent payment model |
 | Target Audience | ✅ Complete | Framework | Professionals 22-45, tech |
-| First A/B Test | 🟢 In Progress | Rifat/Yanaure | Launched Oct 27, due Nov 10 |
+| First A/B Test | 🟢 In Progress | Rifat/Yeanur Alam | Launched Oct 27, due Nov 10 |
 | Learning Resources | ⏳ Ready to Build | Framework | Structure in place |
 | Templates | ⏳ Ready to Create | Framework | Structure with examples |
 | Performance Data | ⏳ Ready to Collect | 5_Symbols | Folder organized |
