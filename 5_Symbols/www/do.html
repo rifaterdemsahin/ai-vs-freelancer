@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workflow Assessment: AI, Hybrid, or Human?</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+            animation: fadeIn 0.8s ease;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        .assessment-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 30px 0;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+            animation: slideUp 0.8s ease;
+        }
+
+        .progress-indicator {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .progress-indicator::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #e0e0e0;
+            z-index: 0;
+        }
+
+        .progress-fill {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            transition: width 0.5s ease;
+            z-index: 1;
+        }
+
+        .progress-step {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #999;
+            position: relative;
+            z-index: 2;
+            transition: all 0.3s ease;
+        }
+
+        .progress-step.active {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            transform: scale(1.2);
+        }
+
+        .progress-step.completed {
+            background: #28a745;
+            color: white;
+        }
+
+        .question-container {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .question-container.active {
+            display: block;
+        }
+
+        .question {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .question-help {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            color: #666;
+            border-left: 4px solid #667eea;
+        }
+
+        .options {
+            display: grid;
+            gap: 15px;
+        }
+
+        .option {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 3px solid transparent;
+            display: flex;
+            align-items: start;
+            gap: 15px;
+        }
+
+        .option:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+        }
+
+        .option.selected {
+            background: #e7f3ff;
+            border-color: #667eea;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+        }
+
+        .option-radio {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 3px solid #ccc;
+            flex-shrink: 0;
+            margin-top: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .option.selected .option-radio {
+            border-color: #667eea;
+            background: #667eea;
+            box-shadow: inset 0 0 0 4px white;
+        }
+
+        .option-content {
+            flex: 1;
+        }
+
+        .option-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .option-desc {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            flex: 1;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+            transform: translateY(-2px);
+        }
+
+        .results {
+            display: none;
+        }
+
+        .results.active {
+            display: block;
+            animation: fadeIn 0.8s ease;
+        }
+
+        .result-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .result-icon {
+            font-size: 5em;
+            margin-bottom: 20px;
+            animation: bounce 1s ease infinite;
+        }
+
+        .result-title {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .result-subtitle {
+            font-size: 1.3em;
+            opacity: 0.95;
+        }
+
+        .recommendation-grid {
+            display: grid;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .recommendation-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+        }
+
+        .recommendation-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .recommendation-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .recommendation-list li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            color: #555;
+        }
+
+        .recommendation-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .score-breakdown {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .score-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .score-value {
+            font-size: 3em;
+            font-weight: bold;
+            color: #667eea;
+            margin: 10px 0;
+        }
+
+        .score-label {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .score-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .warning-box {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            color: #856404;
+        }
+
+        .warning-box h4 {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 { font-size: 1.8em; }
+            .question { font-size: 1.2em; }
+            .result-title { font-size: 1.8em; }
+            .nav-buttons { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 Workflow Assessment Tool</h1>
+            <p>Discover whether AI, Human, or Hybrid is right for your project</p>
+        </div>
+
+        <div class="assessment-card">
+            <!-- Progress Indicator -->
+            <div class="progress-indicator">
+                <div class="progress-fill" id="progressFill"></div>
+                <div class="progress-step active" id="step1">1</div>
+                <div class="progress-step" id="step2">2</div>
+                <div class="progress-step" id="step3">3</div>
+                <div class="progress-step" id="step4">4</div>
+                <div class="progress-step" id="step5">5</div>
+                <div class="progress-step" id="step6">6</div>
+            </div>
+
+            <!-- Question 1: Project Type -->
+            <div class="question-container active" id="q1">
+                <div class="question">What type of project are you working on?</div>
+                <div class="question-help">
+                    This helps determine the level of creativity and strategic thinking required.
+                </div>
+                <div class="options">
+                    <div class="option" data-value="repetitive" data-ai="3" data-human="1" data-hybrid="2">
+                        <div class="option-radio"></div>
+                        <div class="option-content">
+                            <div class="option-title">🔄 Repetitive/Template-based</div>
+                            <div class="option-desc">Data entry, formatting, scheduled tasks, boilerplate code</div>
+                        </div>
+                    </div>
+                    <div class="option" data-value="technical" data-ai="3" data-human="1" data-hybrid="3">
+                        <div class="option-radio"></div>
+                        <div class="option-content">
+                            <div class="option-title">💻 Technical Implementation</div>
+                            <div class="option-desc">Code development, system setup, configuration tasks</div>
+                        </div>
+                    </div>
+                    <div class="option" data-value="creative" data-ai="1" data-human="3" data-hybrid="3">
+                        <div class="option-radio"></div>
+                        <div class="option-content">
+                            <div class="option-title">🎨 Creative/Strategic</div>
+                            <div class="option-desc">Brand design, marketing strategy, content with unique voice</div>
+                        </div>
+                    </div>
+                    <div class="option" data-value="mixed" data-ai="2" data-human="2" data-hybrid="3">
+                        <div class="option-radio"></div>
+                        <div class="option-content">
+                            <div class="option-title">🔀 Mixed Requirements</div>
+                            <div class="option-desc">Combination of routine tasks and creative elements</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2: Timeline -->
+            <div class="question-container" id="q2">
+                <div class="question">What's your timeline for completion?</div>
+                <div class="question-help">
+                    Speed requirements significantly impact the best approach.
+                </div>
+                <div class="options">
+                    <div class="option" data-value="urgent" data-ai="3" data-human="1" data-hybrid="3">
+                        <div class="option-radio"></div>
+                        <div class="option-content">
+                            <div class="option-title">⚡ Urgent (Hours to 1 day)</div>
+                            <div class="option-desc">Need immediate results, no time for back-and-forth</div>
+                        </div>
+                    </div>
+                    <div class="option" data-value="fast" data-ai="3" data-human="2" data-hybrid="3">
+                        <div class="option-radio"></div>
+                        <div class="option-content">
+                            <div class="option-title">🏃 Fast (2-5 days)</div>
+                            <div class="option-desc">Quick turnaround needed, minimal revision time</div>
+                        </div>
+                    </div>
+                    <div class="option" data-value="moderate" data-ai="2" data-human="3" data-hybrid="3">
+                        <div class="option-radio"></div>
+                        <div class="option-content">
+                            <div class="option-title">📅 Moderate (1-2 weeks)</div>
+                            <div class="option-desc">Reasonable timeline, room for collaboration</div>
+                        </div>
+                    </div>
+                    <div class="option" data-value="flexible" data-ai="1" data-human="3" data-hybrid="2">
+                        <div class="option-radio"></div>
+                        <div class="option-content">
+                            <div class="option-title">🕐 Flexible (2+ weeks)</div>
+                            <div class="option-desc">Quality over speed, time for extensive revisions</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3: Budget -->
+            <div class="question-container" id="q3">
+                <div class="question">What's your budget for this project?</div>
+                <div class="question-help">
+                    Cost considerations help balance quality with resources available.
+                </div>
+                <div class="options">
+                    <div class="option" data-value="minimal" data-ai="3" data-human="0" data-hybrid="2">
+                        <div class="option-radio"></div>
+                        <div class="option-content">
+                            <div class="option-title">💰 Minimal ($0-100)</div>
+                            <div class="option-desc">Very limited budget, need cost-effective solution</div>
+                        </div>
+                    </div>
+                    <div class="option" data-value="moderate" data-ai="2" data-human="2" data-hybrid="3">
+                        <div class="option-radio"></div>
+                        <div class="option-content">
+                            <div class="option-title">💵 Moderate ($100-500)</div>
+                            <div class="option-desc">Reasonable budget for quality work</div>
+                        </div>
+                    </div>
+                    <div class="option" data-value="substantial" data-ai="1" data-human="3" data-hybrid="3">
+                        <div class="option-radio"></div>
+                        <div class="option-content">
+                            <div class="option-title">💎 Substantial ($500-2000)</div>
+                            <div class="option-desc">Good budget for professional expertise</div>
+                        </div>
+                    </div>
+                    <div class="option" data-value="premium" data-ai="1" data-human="3" data-hybrid="2">
+                        <div class="option-radio"></div>
+                        <div class="option-content">
+                            <div class="option-title">👑 Premium ($2000+)</div>
+                            <div class="option-desc">High budget, prioritizing top-tier results</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4: Complexity -->
+            <div class="question-container" id="q4">
+                <div class="question">How complex is the task?</div>
+                <div class="question-help">
+                    Complexity affects whether you need human judgment or can rely on AI.
+                </div>
+                <div class="options">
+                    <div class="option" data-value="simple" data-ai="3" data-human="1" data-hybrid="2">
+                        <div class="option-radio"></div>
+                        <div class="option-content">
+                            <div class="option-title">📝 Simple & Well-defined</div>
+                            <div class="option-desc">Clear requirements, straightforward execution</div>
+                        </div>
+                    </div>
+                    <div class="option" data-value="moderate" data-ai="2" data-human="2" data-hybrid="3">
+                        <div class="option-radio"></div>
+                        <div class="option-content">
+                            <div class="option-title">🔧 Moderately Complex</div>
+                            <div class="option-desc">Some ambiguity, requires some problem-solving</div>
+                        </div>
+                    </div>
+                    <div class="option" data-value="complex" data-ai="1" data-human="3" data-hybrid="3">
+                        <div class="option-radio"></div>
+                        <div class="option-content">
+                            <div class="option-title">🧩 Complex & Nuanced</div>
+                            <div class="option-desc">Multiple moving parts, requires expertise</div>
+                        </div>
+                    </div>
+                    <div class="option" data-value="strategic" data-ai="0" data-human="3" data-hybrid="2">
+                        <div class="option-radio"></div>
+                        <div class="option-content">
+                            <div class="option-title">🎯 Strategic & High-stakes</div>
+                            <div class="option-desc">Requires deep understanding, critical business impact</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5: Revision Needs -->
+            <div class="question-container" id="q5">
+                <div class="question">How many revision rounds do you anticipate?</div>
+                <div class="question-help">
+                    Iteration requirements impact coordination overhead and speed.
+                </div>
+                <div class="options">
+                    <div class="option" data-value="none" data-ai="3" data-human="2" data-hybrid="2">
+                        <div class="option-radio"></div>
+                        <div class="option-content">
+                            <div class="option-title">✅ One-and-done</div>
+                            <div class="option-desc">Clear specs, minimal changes expected</div>
+                        </div>
+                    </div>
+                    <div class="option" data-value="few" data-ai="3" data-human="2" data-hybrid="3">
+                        <div class="option-radio"></div>
+                        <div class="option-content">
+                            <div class="option-title">🔄 1-2 Revisions</div>
+                            <div class="option-desc">Some tweaking expected, manageable</div>
+                        </div>
+                    </div>
+                    <div class="option" data-value="several" data-ai="2" data-human="1" data-hybrid="3">
+                        <div class="option-radio"></div>
+                        <div class="option-content">
+                            <div class="option-title">🔁 3-5 Revisions</div>
+                            <div class="option-desc">Iterative process, finding the right fit</div>
+                        </div>
+                    </div>
+                    <div class="option" data-value="many" data-ai="3" data-human="0" data-hybrid="2">
+                        <div class="option-radio"></div>
+                        <div class="option-content">
+                            <div class="option-title">♾️ Many iterations</div>
+                            <div class="option-desc">Experimental, lots of trial and error</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6: Quality Requirements -->
+            <div class="question-container" id="q6">
+                <div class="question">What quality level do you need?</div>
+                <div class="question-help">
+                    Final question! This determines if human touch is critical.
+                </div>
+                <div class="options">
+                    <div class="option" data-value="functional" data-ai="3" data-human="1" data-hybrid="2">
+                        <div class="option-radio"></div>
+                        <div class="option-content">
+                            <div class="option-title">⚙️ Functional</div>
+                            <div class="option-desc">Just needs to work, internal use only</div>
+                        </div>
+                    </div>
+                    <div class="option" data-value="good" data-ai="2" data-human="2" data-hybrid="3">
+                        <div class="option-radio"></div>
+                        <div class="option-content">
+                            <div class="option-title">👍 Good Quality</div>
+                            <div class="option-desc">Professional standard, client-facing</div>
+                        </div>
+                    </div>
+                    <div class="option" data-value="excellent" data-ai="1" data-human="3" data-hybrid="3">
+                        <div class="option-radio"></div>
+                        <div class="option-content">
+                            <div class="option-title">⭐ Excellent</div>
+                            <div class="option-desc">High standards, represents brand</div>
+                        </div>
+                    </div>
+                    <div class="option" data-value="exceptional" data-ai="0" data-human="3" data-hybrid="2">
+                        <div class="option-radio"></div>
+                        <div class="option-content">
+                            <div class="option-title">🏆 Exceptional</div>
+                            <div class="option-desc">Award-worthy, competitive differentiator</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div class="results" id="results">
+                <div class="result-card">
+                    <div class="result-icon" id="resultIcon">🎯</div>
+                    <div class="result-title" id="resultTitle">Your Result</div>
+                    <div class="result-subtitle" id="resultSubtitle">Based on your answers...</div>
+                </div>
+
+                <div class="score-breakdown">
+                    <div class="score-card">
+                        <div class="score-icon">🤖</div>
+                        <div class="score-value" id="aiScore">0</div>
+                        <div class="score-label">AI Agent Score</div>
+                    </div>
+                    <div class="score-card">
+                        <div class="score-icon">⚡</div>
+                        <div class="score-value" id="hybridScore">0</div>
+                        <div class="score-label">Hybrid Score</div>
+                    </div>
+                    <div class="score-card">
+                        <div class="score-icon">👥</div>
+                        <div class="score-value" id="humanScore">0</div>
+                        <div class="score-label">Human Score</div>
+                    </div>
+                </div>
+
+                <div id="recommendationContent"></div>
+
+                <div style="text-align: center; margin-top: 30px;">
+                    <button class="btn btn-secondary" onclick="restartAssessment()">🔄 Start New Assessment</button>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="nav-buttons" id="navButtons">
+                <button class="btn btn-secondary" id="prevBtn" onclick="prevQuestion()" style="display: none;">← Previous</button>
+                <button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()" disabled>Next →</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentQuestion = 1;
+        const totalQuestions = 6;
+        let answers = {};
+        let scores = { ai: 0, human: 0, hybrid: 0 };
+
+        // Handle option selection
+        document.querySelectorAll('.option').forEach(option => {
+            option.addEventListener('click', function() {
+                const container = this.closest('.question-container');
+                container.querySelectorAll('.option').forEach(opt => opt.classList.remove('selected'));
+                this.classList.add('selected');
+                
+                const questionId = container.id;
+                answers[questionId] = {
+                    value: this.dataset.value,
+                    ai: parseInt(this.dataset.ai),
+                    human: parseInt(this.dataset.human),
+                    hybrid: parseInt(this.dataset.hybrid)
+                };
+                
+                document.getElementById('nextBtn').disabled = false;
+            });
+        });
+
+        function nextQuestion() {
+            if (currentQuestion < totalQuestions) {
+                document.getElementById(`q${currentQuestion}`).classList.remove('active');
+                document.getElementById(`step${currentQuestion}`).classList.add('completed');
+                currentQuestion++;
+                document.getElementById(`q${currentQuestion}`).classList.add('active');
+                document.getElementById(`step${currentQuestion}`).classList.add('active');
+                
+                updateProgress();
+                updateButtons();
+                
+                // Disable next button until option selected
+                if (!answers[`q${currentQuestion}`]) {
+                    document.getElementById('nextBtn').disabled = true;
+                }
+            } else {
+                showResults();
+            }
+        }
+
+        function prevQuestion() {
+            if (currentQuestion > 1) {
+                document.getElementById(`q${currentQuestion}`).classList.remove('active');
+                document.getElementById(`step${currentQuestion}`).classList.remove('active');
+                currentQuestion--;
+                document.getElementById(`q${currentQuestion}`).classList.add('active');
+                document.getElementById(`step${currentQuestion}`).classList.remove('completed');
+                
+                updateProgress();
+                updateButtons();
+                document.getElementById('nextBtn').disabled = false;
+            }
+        }
+
+        function updateProgress() {
+            const progress = ((currentQuestion - 1) / totalQuestions) * 100;
+            document.getElementById('progressFill').style.width = progress + '%';
+        }
+
+        function updateButtons() {
+            document.getElementById('prevBtn').style.display = currentQuestion > 1 ? 'block' : 'none';
+            document.getElementById('nextBtn').textContent = currentQuestion === totalQuestions ? 'See Results 🎯' : 'Next →';
+        }
+
+        function calculateScores() {
+            scores = { ai: 0, human: 0, hybrid: 0 };
+            Object.values(answers).forEach(answer => {
+                scores.ai += answer.ai;
+                scores.human += answer.human;
+                scores.hybrid += answer.hybrid;
+            });
+        }
+
+        function showResults() {
+            calculateScores();
+            
+            document.getElementById('navButtons').style.display = 'none';
+            document.querySelectorAll('.question-container').forEach(q => q.style.display = 'none');
+            document.querySelector('.progress-indicator').style.display = 'none';
+            
+            const results = document.getElementById('results');
+            results.classList.add('active');
+            
+            // Animate scores
+            setTimeout(() => {
+                animateScore('aiScore', scores.ai);
+                animateScore('hybridScore', scores.hybrid);
+                animateScore('humanScore', scores.human);
+            }, 300);
+            
+            // Determine winner
+            const maxScore = Math.max(scores.ai, scores.human, scores.hybrid);
+            let recommendation = '';
+            let icon = '';
+            let title = '';
+            let subtitle = '';
+            
+            if (scores.hybrid === maxScore) {
+                recommendation = 'hybrid';
+                icon = '⚡';
+                title = 'Hybrid Approach Recommended';
+                subtitle = 'Best of both worlds - strategic combination wins!';
+            } else if (scores.ai === maxScore) {
+                recommendation = 'ai';
+                icon = '🤖';
+                title = 'AI Agent Recommended';
+                subtitle = 'Speed, efficiency, and automation for the win!';
+            } else {
+                recommendation = 'human';
+                icon = '👥';
+                title = 'Human Freelancer Recommended';
+                subtitle = 'Expertise, creativity, and strategic thinking needed!';
+            }
+            
+            document.getElementById('resultIcon').textContent = icon;
+            document.getElementById('resultTitle').textContent = title;
+            document.getElementById('resultSubtitle').textContent = subtitle;
+            
+            displayRecommendations(recommendation);
+        }
+
+        function animateScore(elementId, targetScore) {
+            const element = document.getElementById(elementId);
+            let current = 0;
+            const increment = targetScore / 30;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= targetScore) {
+                    current = targetScore;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.round(current);
+            }, 30);
+        }
+
+        function displayRecommendations(type) {
+            const content = document.getElementById('recommendationContent');
+            
+            const recommendations = {
+                ai: {
+                    title: '🤖 AI Agent Strategy',
+                    items: [
+                        'Use AI tools like ChatGPT, Claude, or GitHub Copilot for rapid prototyping',
+                        'Set up n8n or Zapier workflows to automate repetitive tasks',
+                        'Create prompt templates and agent frameworks to capture reusable patterns',
+                        'Focus your time on reviewing and refining AI output with your taste',
+                        'Implement version control for your prompts and workflows'
+                    ],
+                    tools: [
+                        'ChatGPT/Claude for content and code generation',
+                        'n8n for workflow automation',
+                        'Midjourney/DALL-E for visual assets',
+                        'Descript for video/audio editing',
+                        'GitHub Copilot for coding assistance'
+                    ],
+                    warnings: [
+                        'AI still needs human oversight for quality control',
+                        'Complex strategic decisions require human judgment',
+                        'Initial setup and prompt engineering takes time to master'
+                    ]
+                },
+                hybrid: {
+                    title: '⚡ Hybrid Approach Strategy',
+                    items: [
+                        'Use AI for drafts, boilerplates, and initial rough cuts',
+                        'Bring in human freelancers for strategic review and creative direction',
+                        'Let AI handle all revision iterations based on human feedback',
+                        'Use AI agents for coordination, scheduling, and follow-ups',
+                        'Humans focus only on high-value decisions and taste-making'
+                    ],
+                    tools: [
+                        'AI: ChatGPT, Claude for content generation',
+                        'AI: Automated testing and quality checks',
+                        'Human: Strategic consultants for key decisions',
+                        'Human: Creative directors for final approval',
+                        'AI: n8n for orchestrating the workflow'
+                    ],
+                    warnings: [
+                        'Requires clear handoff processes between AI and humans',
+                        'Need to define which decisions are AI vs human territory',
+                        'Communication overhead still exists but is minimized'
+                    ]
+                },
+                human: {
+                    title: '👥 Human Freelancer Strategy',
+                    items: [
+                        'Hire specialists with proven expertise in your domain',
+                        'Invest time in detailed briefs to minimize revision rounds',
+                        'Build long-term relationships with reliable freelancers',
+                        'Use platforms like Upwork, Toptal, or personal network referrals',
+                        'Ensure freelancers have their own AI workflows to stay competitive'
+                    ],
+                    tools: [
+                        'Upwork/Fiverr for finding talent',
+                        'Slack/Discord for communication',
+                        'Notion/Asana for project management',
+                        'Loom for video feedback',
+                        'Ask them what AI tools they use!'
+                    ],
+                    warnings: [
+                        'Significantly higher cost than AI-only approach',
+                        'Timezone and availability coordination required',
+                        'Quality varies widely - vet candidates carefully',
+                        'In 2024-2025 recession, rates may be competitive but availability is limited'
+                    ]
+                }
+            };
+            
+            const rec = recommendations[type];
+            
+            let html = `
+                <div class="recommendation-grid">
+                    <div class="recommendation-card">
+                        <h3>${rec.title}</h3>
+                        <ul class="recommendation-list">
+                            ${rec.items.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                    
+                    <div class="recommendation-card">
+                        <h3>🛠️ Recommended Tools & Services</h3>
+                        <ul class="recommendation-list">
+                            ${rec.tools.map(tool => `<li>${tool}</li>`).join('')}
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="warning-box">
+                    <h4>⚠️ Important Considerations</h4>
+                    <ul style="margin: 10px 0 0 20px;">
+                        ${rec.warnings.map(warning => `<li>${warning}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+            
+            // Add specific scenario-based advice
+            html += `
+                <div class="recommendation-card" style="margin-top: 20px; background: #f8f9fa;">
+                    <h3>📋 Next Steps for Your Project</h3>
+                    <div style="color: #555; line-height: 1.8;">
+            `;
+            
+            if (type === 'ai') {
+                html += `
+                    <p><strong>Week 1:</strong> Choose your AI tools and learn the basics. Spend 4-5 hours on tutorials.</p>
+                    <p><strong>Week 2:</strong> Create your first automated workflow. Start small with one repetitive task.</p>
+                    <p><strong>Week 3+:</strong> Refine prompts, build a library of reusable templates, iterate on quality.</p>
+                    <p><strong>Pro Tip:</strong> Document everything! Your prompt library becomes your competitive advantage.</p>
+                `;
+            } else if (type === 'hybrid') {
+                html += `
+                    <p><strong>Day 1:</strong> Set up AI tools for initial drafts and automation (2-3 hours).</p>
+                    <p><strong>Day 2:</strong> Post job listing for human freelancer with clear scope (1 hour).</p>
+                    <p><strong>Week 1:</strong> AI generates first draft, human reviews and provides strategic direction.</p>
+                    <p><strong>Ongoing:</strong> AI handles revisions, human approves milestones. You orchestrate both.</p>
+                    <p><strong>Pro Tip:</strong> This is what I use! It's the fastest path to quality results in 2025.</p>
+                `;
+            } else {
+                html += `
+                    <p><strong>Day 1-2:</strong> Write detailed brief with examples, scope, and success criteria.</p>
+                    <p><strong>Day 3-5:</strong> Review proposals, interview top 3 candidates, check portfolios.</p>
+                    <p><strong>Week 1:</strong> Onboard freelancer, clarify expectations, establish communication rhythm.</p>
+                    <p><strong>Ongoing:</strong> Regular check-ins, clear feedback loops, build trust over time.</p>
+                    <p><strong>Pro Tip:</strong> Ask if they use AI! In 2025, the best freelancers augment their work with AI.</p>
+                `;
+            }
+            
+            html += `
+                    </div>
+                </div>
+            `;
+            
+            // Add cost comparison
+            const costs = {
+                ai: { range: '$20-100/month', desc: 'Tool subscriptions + your time' },
+                hybrid: { range: '$200-800/project', desc: 'AI tools + selective human input' },
+                human: { range: '$500-3000/project', desc: 'Full freelancer rates' }
+            };
+            
+            html += `
+                <div class="recommendation-card" style="margin-top: 20px;">
+                    <h3>💰 Expected Cost Range</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 15px;">
+                        ${Object.entries(costs).map(([key, val]) => `
+                            <div style="text-align: center; padding: 15px; background: ${key === type ? '#e7f3ff' : '#f8f9fa'}; border-radius: 10px; border: ${key === type ? '3px solid #667eea' : '2px solid #e0e0e0'};">
+                                <div style="font-size: 0.9em; color: #666; margin-bottom: 5px;">${key === 'ai' ? '🤖 AI' : key === 'hybrid' ? '⚡ Hybrid' : '👥 Human'}</div>
+                                <div style="font-size: 1.5em; font-weight: bold; color: #667eea; margin: 10px 0;">${val.range}</div>
+                                <div style="font-size: 0.85em; color: #777;">${val.desc}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+            
+            content.innerHTML = html;
+        }
+
+        function restartAssessment() {
+            currentQuestion = 1;
+            answers = {};
+            scores = { ai: 0, human: 0, hybrid: 0 };
+            
+            document.getElementById('results').classList.remove('active');
+            document.getElementById('navButtons').style.display = 'flex';
+            document.querySelector('.progress-indicator').style.display = 'flex';
+            
+            document.querySelectorAll('.question-container').forEach(q => {
+                q.classList.remove('active');
+                q.querySelectorAll('.option').forEach(opt => opt.classList.remove('selected'));
+            });
+            
+            document.querySelectorAll('.progress-step').forEach(step => {
+                step.classList.remove('active', 'completed');
+            });
+            
+            document.getElementById('q1').classList.add('active');
+            document.getElementById('step1').classList.add('active');
+            document.getElementById('progressFill').style.width = '0%';
+            document.getElementById('nextBtn').disabled = true;
+            document.getElementById('prevBtn').style.display = 'none';
+            document.getElementById('nextBtn').textContent = 'Next →';
+        }
