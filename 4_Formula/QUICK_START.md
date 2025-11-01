@@ -45,7 +45,7 @@ This project structure guides every phase from planning through validation. **Re
 ---
 
 ### **3_UI** — What We're Learning
-🎓 **Purpose:** Build knowledge  
+🎓 **Purpose:** Build visual knowledge  
 📂 **Key Content:** Learning modules (to be created)  
 🎯 **Start here if:** You need to learn the concepts  
 ⏱️ **Time to read:** 30+ minutes (ongoing)
@@ -63,7 +63,7 @@ This project structure guides every phase from planning through validation. **Re
 ---
 
 ### **4_Formula** — What We're Reusing
-📚 **Purpose:** Standardize and accelerate  
+📚 **Purpose:** Standardize and accelerate  by using GPT
 📂 **Key Content:** Templates and checklists (to be created)  
 🎯 **Start here if:** You're about to execute something  
 ⏱️ **Time to read:** 5-10 minutes per template
