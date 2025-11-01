@@ -2,7 +2,7 @@
 
 ## 🎓 Purpose
 
-Build a personal knowledge base of concepts, theories, design patterns, and skills required for this project.
+Build a personal visual representation of your  knowledge base of concepts, theories, design patterns, and skills required for this project.
 
 **Premise:** Development is a continuous learning journey. Document and share what you learn.
 
