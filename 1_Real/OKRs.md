@@ -5,13 +5,13 @@
 **Focus:** Optimize thumbnail performance and viewer engagement through data-driven design decisions
 
 #### Key Results:
-1. **Improve Thumbnail CTR by 25%**
+1. **Improve Thumbnail CTR**
    - Baseline: Current average CTR across all videos
    - Target: Achieve 25% improvement through A/B testing
    - Measurement: YouTube Analytics CTR data comparison
 
 2. **Complete Thumbnail A/B Testing Program**
-   - Execute minimum 3 thumbnail A/B tests using YouTube's built-in feature
+   - Execute minimum 2 thumbnail A/B tests using YouTube's built-in feature
    - Document performance differences between AI-generated vs. professionally designed thumbnails
    - Achieve statistically significant results within 14-day test periods
 
@@ -64,11 +64,12 @@
 #### Key Results:
 1. **Complete Cost-Benefit Analysis of Service Providers**
    - Compare ROI of $20 freelancer thumbnail vs. AI-generated alternatives
-   - Track performance improvement per dollar spent
+   - Track performance improvement per time spent
    - Establish clear criteria for future service investments
 
 2. **Achieve Positive ROI on Freelancer Services**
-   - Thumbnail performance must justify $20 investment through increased views
+   - Thumbnail performance must justify $20 investment through increased views measured by Youtube studio analytics
+   - Calculate return on investment for each approach
    - Calculate revenue impact of improved CTR
    - Document scalability of successful approaches
 

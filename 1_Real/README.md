@@ -51,8 +51,9 @@ Define **what success looks like** for this project. Every decision, implementat
 - **Average View Duration** — Content quality indicator
 
 ### Secondary KPIs:
-- **Revenue per Video** — Economic impact
-- **Cost per Acquisition** — Efficiency measure
+- **Customer Validation** — Customer Discovery
+- **Likes and Dislikes Ration (CPA)** — Engagement level
+- **Comments per Video** — Community interaction
 - **Audience Retention Rate** — Content relevance
 - **Geographic Distribution** — Market penetration
 
@@ -61,10 +62,12 @@ Define **what success looks like** for this project. Every decision, implementat
 ## 🔄 Review Schedule
 
 - **Weekly** — CTR performance and A/B test progress
-- **Bi-weekly** — Subscriber growth and engagement metrics
-- **Monthly** — Full OKR progress review and strategy adjustments
-- **End of Quarter** — Complete assessment and next quarter planning
-
+- **Bi-weekly** — Subscriber growth and engagement metrics > Payment to freelancer
+- **Quarterly** — Comprehensive review of all KPIs and OKRs
+- **Every Two Months** — Detailed analysis of external services' impact
+- **Monthly** — Quarterly OKR review and strategy updates
+- **End of Quarter** — Comprehensive project evaluation and future plans
+- **Yearly** — Annual review of overall project health and next steps
 ---
 
 ## ✅ How to Use This Section
