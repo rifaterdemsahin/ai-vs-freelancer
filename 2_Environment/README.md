@@ -61,6 +61,7 @@ Translate objectives into an actionable roadmap. Define **how we'll get there** 
 
 ### Key Dates
 - **Effective Date:** October 27, 2025
+- **Thumbnail Launch Date:** October 31, 2025
 - **First Test Duration:** ~14 days from launch
 - **Results Verification:** Screenshot/access to YouTube A/B test results
 
