@@ -1,68 +1,134 @@
 TITLE: GEMINI POST-PRODUCTION PLAN (TIMELINE 5)
 FCM: NON-DROP FRAME
 
-001  001       V     C         01:00:00:05 01:00:07:28 01:00:00:05 01:00:07:28
-* |VO: Hey everyone who is watching this video, hiring teams, going solo, using AI and everything in between. [cite_start]This isn't a LinkedIn fantasy, it is what is real in 2025 November. [cite: 1, 2, 3] || GEMINI_PROMPT: SFX: Upbeat digital intro music, quick whooshes. | GRAPHIC: Title Card: 'THE 2025 PLAYBOOK'. Fast-cut montage: 1. Icon of a team. 2. Icon of a solo person. 3. Icon of a brain/AI. | B-ROLL: Mockup of a 'LinkedIn fantasy' post (fluffy text) dissolving into 'REALITY: 2025' text. |C:ResolveColorRed |M:Hook_S1 |D:233
+001  001       V     C        01:00:00:05 01:00:07:28 01:00:00:05 01:00:07:28
+M: Hook_S1
+|C:ResolveColorRed |D:233
+* FROM CLIP NAME: GEMINI_001
+* COMMENT: SFX: Upbeat digital intro music, quick whooshes. GRAPHIC: Title Card: 'THE 2025 PLAYBOOK'. Fast-cut montage: 1. Icon of a team. 2. Icon of a solo person. 3. Icon of a brain/AI. B-ROLL: Mockup of a 'LinkedIn fantasy' post (fluffy text) dissolving into 'REALITY: 2025' text.
 
-002  001       V     C         01:00:18:08 01:00:34:07 01:00:18:08 01:00:34:07
-* |VO: I have built systems across three different markets, IT contracting, video production and now AI engineering. [cite_start]And I have trained with professionals in the background and now I'm currently automating everything with Eneta. [cite: 4, 5] || GEMINI_PROMPT: SFX: Subtle keyboard typing, server hum. | GRAPHIC: Lower third: 'SPEAKER NAME - 3X System Builder'. Animated list: 1. IT Contracting (Code icon) 2. Video Production (Film icon) 3. AI Engineering (Neural Net icon). | B-ROLL: Show a stylized diagram of 'n8n' (Eneta) automation flow. |C:ResolveColorYellow |M:Background_S2 |D:479
+002  001       V     C        01:00:18:08 01:00:34:07 01:00:18:08 01:00:34:07
+M: Background_S2
+|C:ResolveColorYellow |D:479
+* FROM CLIP NAME: GEMINI_002
+* COMMENT: SFX: Subtle keyboard typing, server hum. GRAPHIC: Lower third: 'SPEAKER NAME - 3X System Builder'. Animated list: 1. IT Contracting (Code icon) 2. Video Production (Film icon) 3. AI Engineering (Neural Net icon). B-ROLL: Show a stylized diagram of 'n8n' (Eneta) automation flow.
 
-003  001       V     C         01:00:34:21 01:01:00:07 01:00:34:21 01:01:00:07
-* |VO: When I started I threw the budget at people. I was making good money from contracting so I was ready to spend the money. My goal to create a team and build it and make it work. I was excited to get a designer, video editor, operations people. I wanted to do the wall setup. [cite_start]I was very optimistic I will be able to do this customer discovery and the initial product validation that was brilliant. [cite: 6, 7, 8, 9, 10, 11] || GEMINI_PROMPT: SFX: 'Ka-ching' money sound, money flying. | GRAPHIC: Title Card: 'MISTAKE #1: The Old Way'. Animate a pile of money being thrown at icons for 'Designer', 'Editor', 'Ops'. | B-ROLL: Screen recording of a project management board (like Asana/Trello) getting filled with too many people and tasks. |C:ResolveColorRed |M:Mistake1_Hiring_S3 |D:766
+003  001       V     C        01:00:34:21 01:01:00:07 01:00:34:21 01:01:00:07
+M: Mistake1_Hiring_S3
+|C:ResolveColorRed |D:766
+* FROM CLIP NAME: GEMINI_003
+* COMMENT: SFX: 'Ka-ching' money sound, money flying. GRAPHIC: Title Card: 'MISTAKE #1: The Old Way'. Animate a pile of money being thrown at icons for 'Designer', 'Editor', 'Ops'. B-ROLL: Screen recording of a project management board (like Asana/Trello) getting filled with too many people and tasks.
 
-004  001       V     C         01:01:00:16 01:01:23:23 01:01:00:16 01:01:23:23
-* |VO: Use a team. In the beginning I was very naive. I thought I hit the golden rush. I will be able to come out through this. But here is a brutal truth. It broke down in the couple of years and I was unable to make it work. The video editing took weeks. I'm right now doing it in less than four hours. [cite_start]It took me four weeks to be able to complete even a simple video. [cite: 12, 13, 14, 15, 16, 17] || GEMINI_PROMPT: SFX: Record scratch, dramatic 'thud' or 'boom'. | GRAPHIC: Title Card: 'THE BRUTAL TRUTH'. Create a 'VS' graphic: LEFT: 'OLD WAY' with a calendar showing '4 WEEKS' (X'ed out). RIGHT: 'NEW WAY' with a clock showing '4 HOURS'. | B-ROLL: A sped-up, chaotic video edit timeline vs. a clean, simple one. |C:ResolveColorYellow |M:BrutalTruth_S4 |D:697
+004  001       V     C        01:01:00:16 01:01:23:23 01:01:00:16 01:01:23:23
+M: BrutalTruth_S4
+|C:ResolveColorYellow |D:697
+* FROM CLIP NAME: GEMINI_004
+* COMMENT: SFX: Record scratch, dramatic 'thud' or 'boom'. GRAPHIC: Title Card: 'THE BRUTAL TRUTH'. Create a 'VS' graphic: LEFT: 'OLD WAY' with a calendar showing '4 WEEKS' (X'ed out). RIGHT: 'NEW WAY' with a clock showing '4 HOURS'. B-ROLL: A sped-up, chaotic video edit timeline vs. a clean, simple one.
 
-005  001       V     C         01:01:24:00 01:02:07:00 01:01:24:00 01:02:07:00
-* |VO: I was annoyed and the backhand automation with other developers because I was working in IT contracting just forget about it. It did not work. Because one developer's framework didn't match the others and understanding it even took the disappointing thing was I paid for the human intuition but the reality is I got a human overhead instead. The cost structure broke down as the project slowed down because if there is no cash in the bank you would not be able to progress your projects. [cite_start]And also one of my mentors even told me going back and forth in video production was the main cost that was driving everything down. [cite: 18, 19, 20, 21] || GEMINI_PROMPT: SFX: Frustrated typing, error buzzers, paper shredder. | GRAPHIC: Animate two code blocks (frameworks) failing to connect (like puzzle pieces that don't fit). Show a scale: 'Human Intuition' (light) vs 'Human Overhead' (heavy, crashing down). | B-ROLL: Animation of a cash-in-bank graph rapidly declining to zero. |C:ResolveColorRed |M:FailureAnalysis_S5 |D:1290
+005  001       V     C        01:01:24:00 01:02:07:00 01:01:24:00 01:02:07:00
+M: FailureAnalysis_S5
+|C:ResolveColorRed |D:1290
+* FROM CLIP NAME: GEMINI_005
+* COMMENT: SFX: Frustrated typing, error buzzers, paper shredder. GRAPHIC: Animate two code blocks (frameworks) failing to connect (like puzzle pieces that don't fit). Show a scale: 'Human Intuition' (light) vs 'Human Overhead' (heavy, crashing down). B-ROLL: Animation of a cash-in-bank graph rapidly declining to zero.
 
-006  001       V     C         01:02:07:12 01:02:32:05 01:02:07:12 01:02:32:05
-* |VO: So like everybody else my next idea was I'm gonna go all in on AI and do everything with the automation. That was my but honestly I was thinking I was just an IT contractor not a full-time video editor or an AI person. Honestly I was still in an M skilled mindset. [cite_start]I thought I was just an IT contractor not a full-time video editor and AI could be delegated to somebody else. [cite: 22, 23, 24, 25] || GEMINI_PROMPT: SFX: Sci-fi 'power-up' sound, robotic voice. | GRAPHIC: Title Card: 'MISTAKE #2: The "All AI" Fantasy'. Animate a person handing a 'Video Edit' task to a robot, who just looks confused or drops it. Text: '"M-Skilled Mindset"'. | B-ROLL: Mockup of a complex AI tool interface (like ComfyUI) looking overwhelming. |C:ResolveColorYellow |M:Mistake2_AI_S6 |D:743
+006  001       V     C        01:02:07:12 01:02:32:05 01:02:07:12 01:02:32:05
+M: Mistake2_AI_S6
+|C:ResolveColorYellow |D:743
+* FROM CLIP NAME: GEMINI_006
+* COMMENT: SFX: Sci-fi 'power-up' sound, robotic voice. GRAPHIC: Title Card: 'MISTAKE #2: The "All AI" Fantasy'. Animate a person handing a 'Video Edit' task to a robot, who just looks confused or drops it. Text: '"M-Skilled Mindset"'. B-ROLL: Mockup of a complex AI tool interface (like ComfyUI) looking overwhelming.
 
-007  001       V     C         01:02:32:11 01:03:20:26 01:02:32:11 01:03:20:26
-* |VO: I was self-aware that I started everything with an employee mindset not as a business mindset. I tried to do everything myself. My learning curve also ate all the budgets that I didn't have and it made me shut down my own studio for the video production. What was the real problem? My real problem was me. I was very irrational about automation and irrational about planning. For me I was getting overwhelmed doing rough cuts scheduling iterating on the content. [cite_start]Everything done by myself inefficiently because I didn't have the framework to work with the humans or nor with AI and I was getting exhausted under the chaos and I was becoming unhappy not satisfied on what I was working with. [cite: 26, 27, 28, 29, 30, 31] || GEMINI_PROMPT: SFX: Downward 'womp womp' sound, heartbeat, sigh. | GRAPHIC: Title Card: 'THE REAL PROBLEM'. Animate a person juggling 'Rough Cuts', 'Scheduling', 'Content' (and dropping them). Show a 'Budget' bar being eaten by a 'Learning Curve' (like Pac-Man). | B-ROLL: A 'Studio Closed' sign hanging on a door. |C:ResolveColorRed |M:RealProblem_Me_S7 |D:1455
+007  001       V     C        01:02:32:11 01:03:20:26 01:02:32:11 01:03:20:26
+M: RealProblem_Me_S7
+|C:ResolveColorRed |D:1455
+* FROM CLIP NAME: GEMINI_007
+* COMMENT: SFX: Downward 'womp womp' sound, heartbeat, sigh. GRAPHIC: Title Card: 'THE REAL PROBLEM'. Animate a person juggling 'Rough Cuts', 'Scheduling', 'Content' (and dropping them). Show a 'Budget' bar being eaten by a 'Learning Curve' (like Pac-Man). B-ROLL: A 'Studio Closed' sign hanging on a door.
 
-008  001       V     C         01:03:21:08 01:04:04:25 01:03:21:08 01:04:04:25
-* |VO: Everything shifted when I moved my mindset from the known state to the unknown state. I made sure that I moved like a strategist while creating my content in my contracts in video production and in the AI engineering. To be clear AI is great for the repetitive logical and time consuming work such as the NA10 workflows that I'm using it for IT contracting for repetitive tasks such as email pipelines, content scheduling it works like a chart such as I build a team to be able to get all the recruiter emails. [cite_start]Right now NA10 is doing it and putting it to a list automatically without me going back and forth and talking with the teams. [cite: 32, 33, 34, 35] || GEMINI_PROMPT: SFX: 'Aha!' moment chime, 'click' sound, smooth automation hum. | GRAPHIC: Title Card: 'THE SHIFT: AI for REPETITIVE Work'. Animate a simple flow: 'Emails' -> [n8n logo] -> 'List'. Show a checklist: 'Email Pipelines' (check), 'Content Scheduling' (check). | B-ROLL: Screen recording of an n8n (or Zapier) workflow showing nodes connecting. |C:ResolveColorYellow |M:AI_Solution_S8 |D:1307
+008  001       V     C        01:03:21:08 01:04:04:25 01:03:21:08 01:04:04:25
+M: AI_Solution_S8
+|C:ResolveColorYellow |D:1307
+* FROM CLIP NAME: GEMINI_008
+* COMMENT: SFX: 'Aha!' moment chime, 'click' sound, smooth automation hum. GRAPHIC: Title Card: 'THE SHIFT: AI for REPETITIVE Work'. Animate a simple flow: 'Emails' -> [n8n logo] -> 'List'. Show a checklist: 'Email Pipelines' (check), 'Content Scheduling' (check). B-ROLL: Screen recording of an n8n (or Zapier) workflow showing nodes connecting.
 
-009  001       V     C         01:04:05:03 01:04:32:03 01:04:05:03 01:04:32:03
-* |VO: For the strategic side the cloud for building customer delivery frameworks and customer discovery it is great. I can give my target audience, I can give my previous videos and I will be able to create a script the one that I'm reading right now very easily and it knows where to stop. Unlike myself I will be changing the script all the time and also I stopped using only one tool to be able to do everything. [cite_start]Right now I'm using the Canva and having to resolve it. [cite: 36, 37, 38, 39] || GEMINI_PROMPT: SFX: Brain 'powering up' sound, writing/scribbling. | GRAPHIC: Title Card: 'AI for STRATEGIC Work'. Animate: ['Target Audience' + 'Old Videos'] -> [AI Brain] -> 'New Script'. Show logos: 'Canva' + 'DaVinci Resolve'. | B-ROLL: Mockup of a text-gen AI (like Claude/ChatGPT) ingesting video files and outputting a formatted script. |C:ResolveColorRed |M:AI_Strategic_S9 |D:810
+009  001       V     C        01:04:05:03 01:04:32:03 01:04:05:03 01:04:32:03
+M: AI_Strategic_S9
+|C:ResolveColorRed |D:810
+* FROM CLIP NAME: GEMINI_009
+* COMMENT: SFX: Brain 'powering up' sound, writing/scribbling. GRAPHIC: Title Card: 'AI for STRATEGIC Work'. Animate: ['Target Audience' + 'Old Videos'] -> [AI Brain] -> 'New Script'. Show logos: 'Canva' + 'DaVinci Resolve'. B-ROLL: Mockup of a text-gen AI (like Claude/ChatGPT) ingesting video files and outputting a formatted script.
 
-010  001       V     C         01:04:32:03 01:05:04:29 01:04:32:03 01:05:04:29
-* |VO: Right now I'm using the Canva and having to resolve it. So the good thing is what I did in the background for the IT projects that I was working on to become an IT AI engineer from the DevOps background in the IT contracting I created a delivery pilot framework to put everything together even my video production process as well. [cite_start]And with the rise of all AI tools inside the visual studio in Obsidian everything becomes a reusable prompt for my own workflow to be able to transform. [cite: 39, 40, 41] || GEMINI_PROMPT: SFX: 'Building block' sounds, digital confirmation beep. | GRAPHIC: Title Card: 'THE SOLUTION: "Delivery Pilot Framework"'. Animate a central hub 'Framework' connecting 'IT Projects', 'Video Production', 'AI Engineering'. Show logos: 'VS Code', 'Obsidian'. | B-ROLL: Screen recording of an Obsidian vault with linked notes and code snippets. |C:ResolveColorYellow |M:Framework_S10 |D:986
+010  001       V     C        01:04:32:03 01:05:04:29 01:04:32:03 01:05:04:29
+M: Framework_S10
+|C:ResolveColorYellow |D:986
+* FROM CLIP NAME: GEMINI_010
+* COMMENT: SFX: 'Building block' sounds, digital confirmation beep. GRAPHIC: Title Card: 'THE SOLUTION: "Delivery Pilot Framework"'. Animate a central hub 'Framework' connecting 'IT Projects', 'Video Production', 'AI Engineering'. Show logos: 'VS Code', 'Obsidian'. B-ROLL: Screen recording of an Obsidian vault with linked notes and code snippets.
 
-011  001       V     C         01:05:05:06 01:05:54:05 01:05:05:06 01:05:54:05
-* |VO: So what about the humans, the teams that I got? Humans are great for the taste that's very very important. We want if you are working with a human you can easily ask should we pivot this angle? That's a good question to go over it with a human not with an AI because it has the taste and it will be able to give you the real-time emotional feedback. I realized the humans at a low energy level are very good at blaming and shaming and I understood I will be able to leverage this. So for your practical use you can use creative judgment if you have a tick skin and if you are able to learn from it. [cite_start]If you are also thinking about creating a team don't do this in the beginning of the customer development process. [cite: 42, 43, 44, 45, 46, 47, 48] || GEMINI_PROMPT: SFX: Human conversation murmur, 'ding' (good idea). | GRAPHIC: Title Card: 'THE ROLE OF HUMANS'. Big text: 'TASTE' & 'JUDGMENT'. Animate a human giving 'emotional feedback' (e.g., a thumbs up/down) to an AI. | B-ROLL: Mockup of a team video call, with one person asking 'Pivot this angle?'. |C:ResolveColorRed |M:HumanRole_S11 |D:1469
+011  001       V     C        01:05:05:06 01:05:54:05 01:05:05:06 01:05:54:05
+M: HumanRole_S11
+|C:ResolveColorRed |D:1469
+* FROM CLIP NAME: GEMINI_011
+* COMMENT: SFX: Human conversation murmur, 'ding' (good idea). GRAPHIC: Title Card: 'THE ROLE OF HUMANS'. Big text: 'TASTE' & 'JUDGMENT'. Animate a human giving 'emotional feedback' (e.g., a thumbs up/down) to an AI. B-ROLL: Mockup of a team video call, with one person asking 'Pivot this angle?'.
 
-012  001       V     C         01:05:54:28 01:06:46:09 01:05:54:28 01:06:46:09
-* |VO: Build it at the end. The company building is an end stage process. Also right now with all these AI advancements what you can do it is you can get very easy fast reviews for your scripts for your code with the AI so use those tasks for the AI don't go over them with the humans. When a human contractor reviews what I do for the architecture and tests the edge cases it is 10x faster for anyone to be able to do what I have given you. Use the machines in the unknown stage with the AI. To be reflective of myself I understood that their feedback is in me. When I create the videos if nobody is watching it means I'm getting the feedback. [cite_start]You just need to learn how to read the YouTube numbers the impressions click through rates and the average view duration. [cite: 49, 50, 51, 52, 53, 54, 55] || GEMINI_PROMPT: SFX: '10x' speed-up sound, data processing. | GRAPHIC: Animate a process flow: 1. AI (for 'First Draft' / 'Code Review'). 2. HUMAN (for 'Architecture' / 'Edge Cases'). Result: '10x Faster'. | B-ROLL: Mockup of a YouTube Analytics dashboard. Highlight 'Impressions', 'CTR', and 'AVD' with glowing boxes. |C:ResolveColorYellow |M:TeamBuilding_Feedback_S12 |D:1541
+012  001       V     C        01:05:54:28 01:06:46:09 01:05:54:28 01:06:46:09
+M: TeamBuilding_Feedback_S12
+|C:ResolveColorYellow |D:1541
+* FROM CLIP NAME: GEMINI_012
+* COMMENT: SFX: '10x' speed-up sound, data processing. GRAPHIC: Animate a process flow: 1. AI (for 'First Draft' / 'Code Review'). 2. HUMAN (for 'Architecture' / 'Edge Cases'). Result: '10x Faster'. B-ROLL: Mockup of a YouTube Analytics dashboard. Highlight 'Impressions', 'CTR', and 'AVD' with glowing boxes.
 
-013  001       V     C         01:06:46:09 01:07:22:13 01:06:46:09 01:07:22:13
-* |VO: And let's be honest the market has shifted the cheese has moved between the 2024 and 2025. In IT we had this big recession. I have seen the short-term contracts are off the borrowing market went down so my main cash cow is the short-term contracts. I had to turn back and fix everything that I had there to make sure that it is still moving. Because most freelancers and contractors I knew either started working for the government or starting doing the Uber. [cite_start]They either adapted or they disappeared from the marketplace. [cite: 56, 57, 58, 59, 60] || GEMINI_PROMPT: SFX: Dramatic 'whoosh' (cheese moving), vinyl scratch, sad trombone. | GRAPHIC: Title Card: 'THE MARKET SHIFTED (2024-2025)'. Animate a graph 'Short-Term Contracts' crashing down. Show icons: 'Freelancer' -> 'Government Building' or 'Uber Car'. | B-ROLL: Quick montage of news headlines about 'IT Recession'. |C:ResolveColorRed |M:MarketShift_S13 |D:1084
+013  001       V     C        01:06:46:09 01:07:22:13 01:06:46:09 01:07:22:13
+M: MarketShift_S13
+|C:ResolveColorRed |D:1084
+* FROM CLIP NAME: GEMINI_013
+* COMMENT: SFX: Dramatic 'whoosh' (cheese moving), vinyl scratch, sad trombone. GRAPHIC: Title Card: 'THE MARKET SHIFTED (2024-2025)'. Animate a graph 'Short-Term Contracts' crashing down. Show icons: 'Freelancer' -> 'Government Building' or 'Uber Car'. B-ROLL: Quick montage of news headlines about 'IT Recession'.
 
-014  001       V     C         01:07:22:25 01:08:07:13 01:07:22:25 01:08:07:13
-* |VO: So my strategy shifted from hire more humans to build systems that scale without constant headcount and without extra costs. And that is a critical question mark for enterprises. They really need to reach there at a time without getting disappearing from the marketplace. So for the practical use case I'm automating work that used to be done by virtual assistant I hired from freerailancer.com, fiber.com from upper for the tasks such as reading emails and answering them doing the job applications. [cite_start]Now I have created templates to be able to do them with an A10 and I have some manual work that I got to do without hiring those team. [cite: 61, 62, 63, 64, 65] || GEMINI_PROMPT: SFX: Machine 'power up', automation 'clink-clank'. | GRAPHIC: Title Card: 'NEW STRATEGY: Systems > Headcount'. Show a 'VA' icon being replaced by an 'n8n' (A10) icon. Animate a flow: 'Job Application' -> [n8n Template] -> 'Submitted'. | B-ROLL: Screen recording of a freelancer site (like Upwork/Fiverr) with a 'VA' profile, then fade to an n8n dashboard. |C:ResolveColorYellow |M:NewStrategy_S14 |D:1338
+014  001       V     C        01:07:22:25 01:08:07:13 01:07:22:25 01:08:07:13
+M: NewStrategy_S14
+|C:ResolveColorYellow |D:1338
+* FROM CLIP NAME: GEMINI_014
+* COMMENT: SFX: Machine 'power up', automation 'clink-clank'. GRAPHIC: Title Card: 'NEW STRATEGY: Systems > Headcount'. Show a 'VA' icon being replaced by an 'n8n' (A10) icon. Animate a flow: 'Job Application' -> [n8n Template] -> 'Submitted'. B-ROLL: Screen recording of a freelancer site (like Upwork/Fiverr) with a 'VA' profile, then fade to an n8n dashboard.
 
-015  001       V     C         01:08:07:23 01:08:57:06 01:08:07:23 01:08:57:06
-* |VO: For me to be productive I'm building the top 10 AI courses to teach others how to use this hybrid model as well. Being able to use the unknown to the known in real time. But I'm slowing down a bit more and more deliberately. Do not rush. I'm testing the pure AI versus the human guided workflows such as I'm creating the top nails for these videos and I'm always testing it in the background. I'm measuring the time of the delivery and the consistency per unit. I slow down one video every week. I'm not trying to create a video every single day. [cite_start]I'm looking at the average watch time, click through rates and the average watch time click through rates and the impressions to make it better. [cite: 66, 67, 68, 69, 70, 71, 72, 73] || GEMINI_PROMPT: SFX: 'Slow down' tape sound, 'metronome' tick-tock. | GRAPHIC: Title Card: 'THE HYBRID TEST'. Big text: 'DO NOT RUSH'. Show a VS. comparison: 'Pure AI' vs 'Human-Guided'. Show a calendar: '1 Video / Week'. | B-ROLL: Repeat the YouTube analytics mockup, showing speaker 'studying' the numbers (CTR, AVD). |C:ResolveColorRed |M:HybridModel_S15 |D:1483
+015  001       V     C        01:08:07:23 01:08:57:06 01:08:07:23 01:08:57:06
+M: HybridModel_S15
+|C:ResolveColorRed |D:1483
+* FROM CLIP NAME: GEMINI_015
+* COMMENT: SFX: 'Slow down' tape sound, 'metronome' tick-tock. GRAPHIC: Title Card: 'THE HYBRID TEST'. Big text: 'DO NOT RUSH'. Show a VS. comparison: 'Pure AI' vs 'Human-Guided'. Show a calendar: '1 Video / Week'. B-ROLL: Repeat the YouTube analytics mockup, showing speaker 'studying' the numbers (CTR, AVD).
 
-016  001       V     C         01:08:57:06 01:09:59:03 01:08:57:06 01:09:59:03
-* |VO: Also as you mentioned I worked in multiple markets so it could be confusing for you a little bit. I thought everybody will become an AI engineer two years ago then I realized it's not possible and I understood I realized I need to help other professionals to advance in their careers by using the AI and become smarter. So I pivoted from DevOps to AI engineering and now I help professionals to become smarter using the AI. That is the main value proposition and I'm working on this with the AI to be able to do the initial iterations and looking at the numbers on YouTube to make sure that if I'm going to do correct direction. I didn't get stuck with the same offering because the world is changing all the time. If I got stuck at DevOps which was rising at the time 10 years ago I would have all these egos that are getting attached. [cite_start]I will not be able to write this AI wave that is coming on right now. [cite: 74, 75, 76, 77, 78, 79, 80] || GEMINI_PROMPT: SFX: 'Pivot' whoosh, 'lightbulb' sound. | GRAPHIC: Title Card: 'THE PIVOT'. Animate a path: 'DevOps' -> (hits a wall 'Ego') -> pivots to -> 'AI Engineering'. Main Value Prop (Text): 'Help Professionals Get Smarter with AI'. | B-ROLL: Animation of a 'DevOps' professional getting stuck, then an 'AI' wave comes and lifts them up. |C:ResolveColorYellow |M:ValueProp_S16 |D:1857
+016  001       V     C        01:08:57:06 01:09:59:03 01:08:57:06 01:09:59:03
+M: ValueProp_S16
+|C:ResolveColorYellow |D:1857
+* FROM CLIP NAME: GEMINI_016
+* COMMENT: SFX: 'Pivot' whoosh, 'lightbulb' sound. GRAPHIC: Title Card: 'THE PIVOT'. Animate a path: 'DevOps' -> (hits a wall 'Ego') -> pivots to -> 'AI Engineering'. Main Value Prop (Text): 'Help Professionals Get Smarter with AI'. B-ROLL: Animation of a 'DevOps' professional getting stuck, then an 'AI' wave comes and lifts them up.
 
-017  001       V     C         01:09:59:03 01:10:23:05 01:09:59:03 01:10:23:05
-* |VO: So what is the answer? AI or humans? Don't choose, do not make any Build a hybrid engine. I did it and you should do the same as well. Here is the three-step framework that you can easily follow. First I create a plan with the AI and stick with that. [cite_start]It is rational, I am irrational, I will stick with the plan that AI has created. [cite: 81, 82, 83, 84, 85, 86] || GEMINI_PROMPT: SFX: 'Tada!' reveal sound, 'check mark' sound. | GRAPHIC: Title Card: 'THE ANSWER: THE HYBRID ENGINE'. Text: 'AI or Humans? (X)'. Text: 'AI + Humans? (CHECK)'. Show 'STEP 1: PLAN WITH AI'. Animate: [AI Brain] -> 'Rational Plan'. [Human Brain] -> 'Irrational' (crossed out). |C:ResolveColorRed |M:Answer_Step1_S17 |D:722
+017  001       V     C        01:09:59:03 01:10:23:05 01:09:59:03 01:10:23:05
+M: Answer_Step1_S17
+|C:ResolveColorRed |D:722
+* FROM CLIP NAME: GEMINI_017
+* COMMENT: SFX: 'Tada!' reveal sound, 'check mark' sound. GRAPHIC: Title Card: 'THE ANSWER: THE HYBRID ENGINE'. Text: 'AI or Humans? (X)'. Text: 'AI + Humans? (CHECK)'. Show 'STEP 1: PLAN WITH AI'. Animate: [AI Brain] -> 'Rational Plan'. [Human Brain] -> 'Irrational' (crossed out).
 
-018  001       V     C         01:10:23:23 01:11:04:09 01:10:23:23 01:11:04:09
-* |VO: For you to become wiser you need to know how to execute when to execute. You need to know unknown is there for you to create. For step two this is the critical part where the humans come in. We use the taste and the judgment coming in. That's a good thing not a bad thing. The blame and shame is a leverage point. You have to embrace it and accept the humans as where they are. That is very very critical for you. [cite_start]You have to have a high energy to be able to accept what is going on around you. [cite: 87, 88, 89, 90, 91, 92, 93] || GEMINI_PROMPT: SFX: 'Shine' sound, human 'hmm' of consideration. | GRAPHIC: Title Card: 'STEP 2: HUMAN JUDGMENT'. Big text: 'TASTE' & 'WISDOM'. Animate 'Blame/Shame' (negative input) being transformed (leveraged) into 'Creative Judgment' (positive output). | B-ROLL: A person looking at an AI-generated design and making a 'small tweak' (the 'taste'). |C:ResolveColorYellow |M:Answer_Step2_S18 |D:1216
+018  001       V     C        01:10:23:23 01:11:04:09 01:10:23:23 01:11:04:09
+M: Answer_Step2_S18
+|C:ResolveColorYellow |D:1216
+* FROM CLIP NAME: GEMINI_018
+* COMMENT: SFX: 'Shine' sound, human 'hmm' of consideration. GRAPHIC: Title Card: 'STEP 2: HUMAN JUDGMENT'. Big text: 'TASTE' & 'WISDOM'. Animate 'Blame/Shame' (negative input) being transformed (leveraged) into 'Creative Judgment' (positive output). B-ROLL: A person looking at an AI-generated design and making a 'small tweak' (the 'taste').
 
-019  001       V     C         01:11:04:26 01:11:41:15 01:11:04:26 01:11:41:15
-* |VO: For the last step use frameworks to be able to capture everything. I created a delivery pilot framework to be able to put everything together to make it sense for myself. So I'm getting all these new projects in and learning to become an engineer, an AI engineer. I'm creating all these courses and the videos and doing my day-to-day work in IBM. I will put everything together in this delivery framework structure. I created this framework. You can go and pull it. It is an easy winner for me. [cite_start]I hope it helps you as well. [cite: 94, 95, 96, 97, 98, 99, 100] || GEMINI_PROMPT: SFX: 'Stamp of approval' sound, 'click' (locking in). | GRAPHIC: Title Card: 'STEP 3: CAPTURE IN A FRAMEWORK'. Animate 'Projects', 'Courses', 'Videos', 'IBM Work' all flying into a box labeled '"Delivery Pilot Framework"'. | B-ROLL: Mockup of a GitHub repository page for the 'delivery-pilot-framework'. |C:ResolveColorRed |M:Answer_Step3_S19 |D:1099
+019  001       V     C        01:11:04:26 01:11:41:15 01:11:04:26 01:11:41:15
+M: Answer_Step3_S19
+|C:ResolveColorRed |D:1099
+* FROM CLIP NAME: GEMINI_019
+* COMMENT: SFX: 'Stamp of approval' sound, 'click' (locking in). GRAPHIC: Title Card: 'STEP 3: CAPTURE IN A FRAMEWORK'. Animate 'Projects', 'Courses', 'Videos', 'IBM Work' all flying into a box labeled '"Delivery Pilot Framework"'. B-ROLL: Mockup of a GitHub repository page for the 'delivery-pilot-framework'.
 
-020  001       V     C         01:11:41:24 01:12:01:13 01:11:41:24 01:12:01:13
-* |VO: So the winner is the person who automates rationality and amplifies the human creativity. Not only one of them, use both of them at the same time. [cite_start]That is what I'm doing in the customer discovery at a scale to be able to build a business from this YouTube channel, from the courses and from the enterprise work that I do. [cite: 101, 102, 103] || GEMINI_PROMPT: SFX: Triumphant 'winner' sound, 'rising' sound. | GRAPHIC: Title Card: 'THE WINNING FORMULA'. Show an equation: '[AI: Automate Rationality] + [Human: Amplify Creativity] = WINNER'. Animate 'YouTube', 'Courses', 'Enterprise' growing from this equation. |C:ResolveColorYellow |M:Conclusion_S20 |D:589
+020  001       V     C        01:11:41:24 01:12:01:13 01:11:41:24 01:12:01:13
+M: Conclusion_S20
+|C:ResolveColorYellow |D:589
+* FROM CLIP NAME: GEMINI_020
+* COMMENT: SFX: Triumphant 'winner' sound, 'rising' sound. GRAPHIC: Title Card: 'THE WINNING FORMULA'. Show an equation: '[AI: Automate Rationality] + [Human: Amplify Creativity] = WINNER'. Animate 'YouTube', 'Courses', 'Enterprise' growing from this equation.
 
-021  001       V     C         01:12:01:26 01:12:29:28 01:12:01:26 01:12:29:28
-* |VO: I started to see some numbers moving on YouTube. Not huge numbers but at least some numbers that are moving. That's a good sign for me to be able to see okay there is some feedback and I know where to look. Because I know your edge isn't choosing between if I only go with AI or if you only go with the humans. [cite_start]Your edge is combining them strategically and capturing the framework so you do not repeat the same errors again and again. [cite: 104, 105, 106, 107, 108] || GEMINI_PROMPT: SFX: 'Chart growing' sound, 'click'. | GRAPHIC: Title Card: 'YOUR TRUE EDGE'. Animate a small 'YouTube views' graph ticking upwards. Show: 'AI vs Humans' (X). Show: 'AI + Humans + Framework' (CHECK). | B-ROLL: A person 'capturing' an idea into an Obsidian/Notion page (the framework). |C:ResolveColorRed |M:FinalEdge_S21 |D:842
+021  001       V     C        01:12:01:26 01:12:29:28 01:12:01:26 01:12:29:28
+M: FinalEdge_S21
+|C:ResolveColorRed |D:842
+* FROM CLIP NAME: GEMINI_021
+* COMMENT: SFX: 'Chart growing' sound, 'click'. GRAPHIC: Title Card: 'YOUR TRUE EDGE'. Animate a small 'YouTube views' graph ticking upwards. Show: 'AI vs Humans' (X). Show: 'AI + Humans + Framework' (CHECK). B-ROLL: A person 'capturing' an idea into an Obsidian/Notion page (the framework).
 
-022  001       V     C         01:12:30:06 01:12:55:23 01:12:30:06 01:12:55:23
-* |VO: I created a repo for this video as well. Go ahead and assess yourself. Go ahead and see if you are on the AI spectrum or if you are on the human spectrum where you are and what you got to do. Feel free to reach out to the GitHub pages that I created down below which is free. [cite_start]I'm putting out everything into these AI courses that you can take for free and the coupon codes are in the desk. [cite: 109, 110, 111, 112] || GEMINI_PROMPT: SFX: 'Click' sound, 'notification' sound. | GRAPHIC: Title Card: 'CALL TO ACTION'. Animate a 'spectrum' bar: Left (Human), Right (AI), with a 'You Are Here?' marker. Show a 'GitHub' logo and 'Free AI Courses' text. | B-ROLL: Screen recording of the GitHub repo and a course landing page with a 'FREE' coupon code. |C:ResolveColorYellow |M:CTA_S22 |D:767
+022  001       V     C        01:12:30:06 01:12:55:23 01:12:30:06 01:12:55:23
+M: CTA_S22
+|C:ResolveColorYellow |D:767
+* FROM CLIP NAME: GEMINI_022
+* COMMENT: SFX: 'Click' sound, 'notification' sound. GRAPHIC: Title Card: 'CALL TO ACTION'. Animate a 'spectrum' bar: Left (Human), Right (AI), with a 'You Are Here?' marker. Show a 'GitHub' logo and 'Free AI Courses' text. B-ROLL: Screen recording of the GitHub repo and a course landing page with a 'FREE' coupon code.
