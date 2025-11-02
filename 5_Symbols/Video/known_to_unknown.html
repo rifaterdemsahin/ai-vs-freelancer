@@ -23,7 +23,7 @@
 
         /* Styling for both sides */
         .side {
-            flex: 1; /* Each side takes up 50% of the space */
+            /* flex: 1; <-- We will now animate this property */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -31,78 +31,131 @@
             padding: 2rem;
             box-sizing: border-box;
             text-align: center;
+            /* Added for smooth 0-width transition */
+            overflow: hidden; 
         }
 
         /* Left Side: KNOWN */
         .known-side {
-            background-color: #f8d7da; /* Light red background */
+            background-color: #f8d7da; /* Light red */
+            position: relative; /* To position the arrow */
+            
+            /* --- NEW: Animation to shrink the panel --- */
+            flex-basis: 100%; /* Start at 100% width */
+            animation: shrinkKnown 1s ease-out 3s forwards; /* Starts at 3s */
         }
 
         /* Right Side: UNKNOWN */
         .unknown-side {
-            background-color: #d4edda; /* Light green background */
+            background-color: #d4edda; /* Light green */
+            white-space: nowrap; /* Prevents content jumble during animation */
+
+            /* --- NEW: Animation to open the panel --- */
+            flex-basis: 0%; /* Start at 0% width */
+            animation: openUnknown 1s ease-out 3s forwards; /* Starts at 3s */
         }
 
         /* Big Font for Titles */
         h2 {
-            font-size: 6vw; /* Responsive font size */
+            font-size: 6vw;
             margin-bottom: 1rem;
-            opacity: 0; /* Start hidden for animation */
-            animation: fadeIn 1s ease-out 0.2s forwards;
+            opacity: 0; /* Start hidden */
+            animation: fadeIn 1s ease-out forwards;
         }
 
         /* Container for the tool icons */
         .tools {
-            font-size: 5vw; /* Big emoji font */
+            font-size: 5vw;
             margin: 1rem 0;
-            opacity: 0; /* Start hidden */
-            animation: fadeInScale 1s ease-out 0.5s forwards;
+            opacity: 0;
+            animation: fadeInScale 1s ease-out forwards;
         }
         
-        /* Container for the many tools on the right */
         .many-tools {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 1.5vw;
-            font-size: 4vw; /* Slightly smaller for many tools */
+            font-size: 4vw;
             opacity: 0;
-            animation: fadeInScale 1s ease-out 0.5s forwards;
+            animation: fadeInScale 1s ease-out forwards;
         }
 
         /* The X and Check Marks */
         .mark {
-            font-size: 8vw; /* Very big font */
+            font-size: 8vw;
             margin-top: 1rem;
+            opacity: 0;
+            animation: fadeInScale 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+        }
+        
+        /* --- NEW: Arrow Styling --- */
+        .arrow {
+            font-size: 5vw;
+            position: absolute;
+            right: 2vw; /* Position on the right edge */
+            top: 50%;
+            transform: translateY(-50%);
             opacity: 0; /* Start hidden */
-            animation: fadeInScale 1.2s cubic-bezier(0.25, 1, 0.5, 1) 0.8s forwards;
+            
+            /* Animation to fade in AFTER known items */
+            animation: fadeIn 1s ease-out 2.2s forwards;
         }
 
+
+        /* --- UPDATED: Animation Delays --- */
+
+        /* KNOWN Side Delays (Start after 1 second) */
+        .known-side h2 {
+            animation-delay: 1s;
+        }
+        .known-side .tools {
+            animation-delay: 1.3s;
+        }
+        .known-side .mark {
+            animation-delay: 1.6s;
+        }
+        /* Arrow delay is set in .arrow class (2.2s) */
+
+
+        /* UNKNOWN Side Delays (Start after panel opens) */
+        /* Panel starts opening at 3s, finishes at 4s */
+        .unknown-side h2 {
+            animation-delay: 4s;
+        }
+        .unknown-side .many-tools {
+            animation-delay: 4.3s;
+        }
+        .unknown-side .mark {
+            animation-delay: 4.6s;
+        }
+        
         /* --- Animation Keyframes --- */
 
-        /* Simple fade-in for titles */
+        /* Simple fade-in */
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
         }
 
-        /* Fade-in and scale-up for emojis */
+        /* Fade-in and scale-up */
         @keyframes fadeInScale {
-            from {
-                opacity: 0;
-                transform: scale(0.5);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
+            from { opacity: 0; transform: scale(0.5); }
+            to   { opacity: 1; transform: scale(1); }
         }
+        
+        /* --- NEW: Panel Animation Keyframes --- */
+        
+        @keyframes shrinkKnown {
+            from { flex-basis: 100%; }
+            to   { flex-basis: 50%; }
+        }
+
+        @keyframes openUnknown {
+            from { flex-basis: 0%; }
+            to   { flex-basis: 50%; }
+        }
+
     </style>
 </head>
 <body>
@@ -116,6 +169,10 @@
             </div>
             <div class="mark">
                 <span>❌</span>
+            </div>
+            
+            <div class="arrow">
+                <span>➡️</span>
             </div>
         </div>
         
