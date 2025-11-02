@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Known vs. Unknown</title>
+    <style>
+        /* Basic page setup */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden; /* Hide scrollbars */
+        }
+
+        /* Main container to hold the two sides */
+        .container {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        /* Styling for both sides */
+        .side {
+            flex: 1; /* Each side takes up 50% of the space */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        /* Left Side: KNOWN */
+        .known-side {
+            background-color: #f8d7da; /* Light red background */
+        }
+
+        /* Right Side: UNKNOWN */
+        .unknown-side {
+            background-color: #d4edda; /* Light green background */
+        }
+
+        /* Big Font for Titles */
+        h2 {
+            font-size: 6vw; /* Responsive font size */
+            margin-bottom: 1rem;
+            opacity: 0; /* Start hidden for animation */
+            animation: fadeIn 1s ease-out 0.2s forwards;
+        }
+
+        /* Container for the tool icons */
+        .tools {
+            font-size: 5vw; /* Big emoji font */
+            margin: 1rem 0;
+            opacity: 0; /* Start hidden */
+            animation: fadeInScale 1s ease-out 0.5s forwards;
+        }
+        
+        /* Container for the many tools on the right */
+        .many-tools {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5vw;
+            font-size: 4vw; /* Slightly smaller for many tools */
+            opacity: 0;
+            animation: fadeInScale 1s ease-out 0.5s forwards;
+        }
+
+        /* The X and Check Marks */
+        .mark {
+            font-size: 8vw; /* Very big font */
+            margin-top: 1rem;
+            opacity: 0; /* Start hidden */
+            animation: fadeInScale 1.2s cubic-bezier(0.25, 1, 0.5, 1) 0.8s forwards;
+        }
+
+        /* --- Animation Keyframes --- */
+
+        /* Simple fade-in for titles */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Fade-in and scale-up for emojis */
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="side known-side">
+            <h2>KNOWN</h2>
+            <div class="tools">
+                <span>🔨</span>
+            </div>
+            <div class="mark">
+                <span>❌</span>
+            </div>
+        </div>
+        
+        <div class="side unknown-side">
+            <h2>UNKNOWN</h2>
+            <div class="many-tools">
+                <span>🔧</span>
+                <span>💡</span>
+                <span>📈</span>
+                <span>🔬</span>
+                <span>🎨</span>
+                <span>🧩</span>
+                <span>🧭</span>
+                <span>📚</span>
+            </div>
+            <div class="mark">
+                <span>✅</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
