@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Hybrid System Action Checklist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            color: #a0a0c0;
+            font-size: 1.1em;
+        }
+
+        .checklist {
+            display: grid;
+            gap: 20px;
+        }
+
+        .checklist-item {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            transition: all 0.3s ease;
+            animation: fadeInUp 0.8s ease;
+            animation-fill-mode: both;
+            cursor: pointer;
+        }
+
+        .checklist-item:nth-child(1) { animation-delay: 1s; }
+        .checklist-item:nth-child(2) { animation-delay: 2s; }
+        .checklist-item:nth-child(3) { animation-delay: 3s; }
+        .checklist-item:nth-child(4) { animation-delay: 4s; }
+        .checklist-item:nth-child(5) { animation-delay: 5s; }
+
+        .checklist-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(102, 126, 234, 0.5);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+        }
+
+        .checklist-item.completed {
+            opacity: 0.6;
+        }
+
+        .checkbox-wrapper {
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+
+        .checkbox {
+            width: 28px;
+            height: 28px;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: rgba(102, 126, 234, 0.1);
+        }
+
+        .checklist-item:hover .checkbox {
+            border-color: #764ba2;
+            background: rgba(118, 75, 162, 0.2);
+        }
+
+        .checkbox.checked {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-color: #667eea;
+        }
+
+        .checkbox svg {
+            width: 18px;
+            height: 18px;
+            fill: none;
+            stroke: white;
+            stroke-width: 3;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .checkbox.checked svg {
+            opacity: 1;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .content h3 {
+            font-size: 1.3em;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        .content p {
+            color: #a0a0c0;
+            line-height: 1.6;
+        }
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            flex-shrink: 0;
+        }
+
+        .icon-ai { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .icon-human { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .icon-framework { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .icon-test { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+        .icon-share { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            animation: fadeIn 1s ease 6s;
+            animation-fill-mode: both;
+        }
+
+        .footer h3 {
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .footer p {
+            color: #a0a0c0;
+            margin-bottom: 10px;
+        }
+
+        .cta-links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .cta-link {
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .cta-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .cta-link.secondary {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(102, 126, 234, 0.5);
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .checklist-item {
+                flex-direction: column;
+            }
+            
+            .cta-links {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Your Hybrid System Action Plan</h1>
+            <p>Build your AI-Human engine in 5 strategic steps</p>
+        </div>
+
+        <div class="checklist">
+            <div class="checklist-item" onclick="toggleCheck(this)">
+                <div class="icon icon-ai">🤖</div>
+                <div class="checkbox-wrapper">
+                    <div class="checkbox">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Step 1: Create Your AI Plan</h3>
+                    <p>Use AI (Claude, ChatGPT, or Perplexity) to create a rational plan for your repetitive tasks. Let AI handle email templates, content scheduling, and automation workflows. Stick to the plan—it's more rational than you are.</p>
+                </div>
+            </div>
+
+            <div class="checklist-item" onclick="toggleCheck(this)">
+                <div class="icon icon-human">👥</div>
+                <div class="checkbox-wrapper">
+                    <div class="checkbox">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Step 2: Add Human Taste & Judgment</h3>
+                    <p>Bring humans in for creative direction, strategic pivots, and quality checks. Ask: "Should we pivot this angle?" Use their taste to validate what AI produces. Embrace constructive feedback—even the uncomfortable kind.</p>
+                </div>
+            </div>
+
+            <div class="checklist-item" onclick="toggleCheck(this)">
+                <div class="icon icon-framework">📋</div>
+                <div class="checkbox-wrapper">
+                    <div class="checkbox">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Step 3: Build Your Capture Framework</h3>
+                    <p>Create a "Delivery Pilot" system to capture everything. Use Git repos, Obsidian, or your preferred tool to document processes. Transform learnings into reusable prompts. Don't repeat the same mistakes—capture and iterate.</p>
+                </div>
+            </div>
+
+            <div class="checklist-item" onclick="toggleCheck(this)">
+                <div class="icon icon-test">🧪</div>
+                <div class="checkbox-wrapper">
+                    <div class="checkbox">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Step 4: Test & Measure Your Hybrid System</h3>
+                    <p>Compare pure AI vs human-guided workflows. Measure time, consistency, and quality. Look at real metrics (YouTube CTR, watch time, project completion). Slow down deliberately—one quality output per week beats daily chaos.</p>
+                </div>
+            </div>
+
+            <div class="checklist-item" onclick="toggleCheck(this)">
+                <div class="icon icon-share">🎯</div>
+                <div class="checkbox-wrapper">
+                    <div class="checkbox">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Step 5: Share Your Hybrid Wins</h3>
+                    <p>Document what works in public. Share your GitHub repos, frameworks, and results. Help others avoid your mistakes. Build systems that scale without constant headcount. Your edge is combining AI and humans strategically.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h3>Ready to Build Your Hybrid Engine?</h3>
+            <p>Access the free Delivery Pilot Framework and self-assessment tool</p>
+            <p style="font-size: 0.9em; margin-top: 15px;">Free AI courses with coupon codes available in description</p>
+            <div class="cta-links">
+                <a href="#" class="cta-link">📚 Get Free Courses</a>
+                <a href="#" class="cta-link secondary">💻 GitHub Framework</a>
+                <a href="#" class="cta-link secondary">🎯 Self-Assessment</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleCheck(item) {
+            const checkbox = item.querySelector('.checkbox');
+            checkbox.classList.toggle('checked');
+            item.classList.toggle('completed');
+        }
+    </script>
+</body>
+</html>
