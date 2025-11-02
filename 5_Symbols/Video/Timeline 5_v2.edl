@@ -1,0 +1,144 @@
+TITLE: Timeline 5_v2
+FCM: NON-DROP FRAME
+
+001  001      V     C        01:00:00:05 01:00:00:06 01:00:00:05 01:00:00:06  
+* COMMENT: hook:s1 |C:ResolveColorYellow |M:Yellow Marker |D:471
+
+002  001      V     C        01:00:08:08 01:00:08:09 01:00:08:08 01:00:08:09  
+* COMMENT: hook:s2 |C:ResolveColorRed |M:Red Marker |D:1
+
+003  001      V     C        01:00:18:08 01:00:18:09 01:00:18:08 01:00:18:09  
+* COMMENT: credibility:s3 |C:ResolveColorRed |M:Red Marker |D:1
+
+004  001      V     C        01:00:26:29 01:00:26:30 01:00:26:29 01:00:26:30  
+* COMMENT: credibility:s4 |C:ResolveColorRed |M:Red Marker |D:1
+
+005  001      V     C        01:00:34:21 01:00:34:22 01:00:34:21 01:00:34:22  
+* COMMENT: mistake1:s5 |C:ResolveColorRed |M:Red Marker |D:1
+
+006  001      V     C        01:00:41:27 01:00:41:28 01:00:41:27 01:00:41:28  
+* COMMENT: mistake1:s6 |C:ResolveColorRed |M:Red Marker |D:1
+
+007  001      V     C        01:00:51:10 01:00:51:11 01:00:51:10 01:00:51:11  
+* COMMENT: mistake1:s7 |C:ResolveColorRed |M:Red Marker |D:1
+
+008  001      V     C        01:01:07:11 01:01:07:12 01:01:07:11 01:01:07:12  
+* COMMENT: breakdown:s8 |C:ResolveColorRed |M:Red Marker |D:1
+
+009  001      V     C        01:01:14:17 01:01:14:18 01:01:14:17 01:01:14:18  
+* COMMENT: breakdown:s9 |C:ResolveColorRed |M:Red Marker |D:1
+
+010  001      V     C        01:01:24:00 01:01:24:01 01:01:24:00 01:01:24:01  
+* COMMENT: breakdown:s10 |C:ResolveColorRed |M:Red Marker |D:1
+
+011  001      V     C        01:01:48:06 01:01:48:07 01:01:48:06 01:01:48:07  
+* COMMENT: breakdown:s11 |C:ResolveColorRed |M:Red Marker |D:1
+
+012  001      V     C        01:02:07:12 01:02:07:13 01:02:07:12 01:02:07:13  
+* COMMENT: mistake2:s12 |C:ResolveColorRed |M:Red Marker |D:1
+
+013  001      V     C        01:02:14:28 01:02:14:29 01:02:14:28 01:02:14:29  
+* COMMENT: mistake2:s13 |C:ResolveColorRed |M:Red Marker |D:1
+
+014  001      V     C        01:02:38:13 01:02:38:14 01:02:38:13 01:02:38:14  
+* COMMENT: mistake2:s14 |C:ResolveColorRed |M:Red Marker |D:1
+
+015  001      V     C        01:02:50:22 01:02:50:23 01:02:50:22 01:02:50:23  
+* COMMENT: turning_point:s15 |C:ResolveColorRed |M:Red Marker |D:1
+
+016  001      V     C        01:02:54:04 01:02:54:05 01:02:54:04 01:02:54:05  
+* COMMENT: turning_point:s16 |C:ResolveColorRed |M:Red Marker |D:1
+
+017  001      V     C        01:03:21:08 01:03:21:09 01:03:21:08 01:03:21:09  
+* COMMENT: solution:s17 |C:ResolveColorRed |M:Red Marker |D:1
+
+018  001      V     C        01:03:36:00 01:03:36:01 01:03:36:00 01:03:36:01  
+* COMMENT: ai_role:s18 |C:ResolveColorRed |M:Red Marker |D:1
+
+019  001      V     C        01:04:05:03 01:04:05:04 01:04:05:03 01:04:05:04  
+* COMMENT: ai_role:s19 |C:ResolveColorRed |M:Red Marker |D:1
+
+020  001      V     C        01:04:24:18 01:04:24:19 01:04:24:18 01:04:24:19  
+* COMMENT: ai_role:s20 |C:ResolveColorRed |M:Red Marker |D:1
+
+021  001      V     C        01:04:35:17 01:04:35:18 01:04:35:17 01:04:35:18  
+* COMMENT: framework_intro:s21 |C:ResolveColorRed |M:Red Marker |D:1
+
+022  001      V     C        01:05:05:06 01:05:05:07 01:05:05:06 01:05:05:07  
+* COMMENT: human_role:s22 |C:ResolveColorRed |M:Red Marker |D:1
+
+023  001      V     C        01:05:12:15 01:05:12:16 01:05:12:15 01:05:12:16  
+* COMMENT: human_role:s23 |C:ResolveColorRed |M:Red Marker |D:1
+
+024  001      V     C        01:05:27:22 01:05:27:23 01:05:27:22 01:05:27:23  
+* COMMENT: human_role:s24 |C:ResolveColorRed |M:Red Marker |D:1
+
+025  001      V     C        01:05:36:22 01:05:36:23 01:05:36:22 01:05:36:23  
+* COMMENT: practical_use:s25 |C:ResolveColorRed |M:Red Marker |D:1
+
+026  001      V     C        01:05:59:09 01:05:59:10 01:05:59:09 01:05:59:10  
+* COMMENT: practical_use:s26 |C:ResolveColorRed |M:Red Marker |D:1
+
+027  001      V     C        01:06:25:05 01:06:25:06 01:06:25:05 01:06:25:06  
+* COMMENT: practical_use:s27 |C:ResolveColorRed |M:Red Marker |D:1
+
+028  001      V     C        01:06:46:09 01:06:46:10 01:06:46:09 01:06:46:10  
+* COMMENT: market_shift:s28 |C:ResolveColorRed |M:Red Marker |D:1
+
+029  001      V     C        01:06:56:18 01:06:56:19 01:06:56:18 01:06:56:19  
+* COMMENT: market_shift:s29 |C:ResolveColorRed |M:Red Marker |D:1
+
+030  001      V     C        01:07:22:25 01:07:22:26 01:07:22:25 01:07:22:26  
+* COMMENT: new_strategy:s30 |C:ResolveColorRed |M:Red Marker |D:1
+
+031  001      V     C        01:07:32:29 01:07:32:30 01:07:32:29 01:07:32:30  
+* COMMENT: new_strategy:s31 |C:ResolveColorRed |M:Red Marker |D:1
+
+032  001      V     C        01:08:07:23 01:08:07:24 01:08:07:23 01:08:07:24  
+* COMMENT: hybrid_workflow:s32 |C:ResolveColorRed |M:Red Marker |D:1
+
+033  001      V     C        01:08:27:00 01:08:27:01 01:08:27:00 01:08:27:01  
+* COMMENT: hybrid_workflow:s33 |C:ResolveColorRed |M:Red Marker |D:1
+
+034  001      V     C        01:08:57:06 01:08:57:07 01:08:57:06 01:08:57:07  
+* COMMENT: pivot:s34 |C:ResolveColorRed |M:Red Marker |D:1
+
+035  001      V     C        01:09:28:12 01:09:28:13 01:09:28:12 01:09:28:13  
+* COMMENT: pivot:s35 |C:ResolveColorRed |M:Red Marker |D:1
+
+036  001      V     C        01:09:59:03 01:09:59:04 01:09:59:03 01:09:59:04  
+* COMMENT: the_answer:s36 |C:ResolveColorRed |M:Red Marker |D:1
+
+037  001      V     C        01:10:01:11 01:10:01:12 01:10:01:11 01:10:01:12  
+* COMMENT: the_answer:s37 |C:ResolveColorRed |M:Red Marker |D:1
+
+038  001      V     C        01:10:10:15 01:10:10:16 01:10:10:15 01:10:10:16  
+* COMMENT: 3_step:s38 |C:ResolveColorRed |M:Red Marker |D:1
+
+039  001      V     C        01:10:14:12 01:10:14:13 01:10:14:12 01:10:14:13  
+* COMMENT: 3_step:s39 |C:ResolveColorRed |M:Red Marker |D:1
+
+040  001      V     C        01:10:23:23 01:10:23:24 01:10:23:23 01:10:23:24  
+* COMMENT: 3_step:s40 |C:ResolveColorRed |M:Red Marker |D:1
+
+041  001      V     C        01:10:38:17 01:10:38:18 01:10:38:17 01:10:38:18  
+* COMMENT: 3_step:s41 |C:ResolveColorRed |M:Red Marker |D:1
+
+042  001      V     C        01:10:58:26 01:10:58:27 01:10:58:26 01:10:58:27  
+* COMMENT: 3_step:s42 |C:ResolveColorRed |M:Red Marker |D:1
+
+043  001      V     C        01:11:41:24 01:11:41:25 01:11:41:24 01:11:41:25  
+* COMMENT: conclusion:s43 |C:ResolveColorRed |M:Red Marker |D:1
+
+044  001      V     C        01:11:47:27 01:11:47:28 01:11:47:27 01:11:47:28  
+* COMMENT: conclusion:s44 |C:ResolveColorRed |M:Red Marker |D:1
+
+045  001      V     C        01:12:14:16 01:12:14:17 01:12:14:16 01:12:14:17  
+* COMMENT: cta:s45 |C:ResolveColorRed |M:Red Marker |D:1
+
+046  001      V     C        01:12:30:06 01:12:30:07 01:12:30:06 01:12:30:07  
+* COMMENT: cta:s46 |C:ResolveColorRed |M:Red Marker |D:1
+
+047  001      V     C        01:12:43:25 01:12:43:26 01:12:43:25 01:12:43:26  
+* COMMENT: cta:s47 |C:ResolveColorRed |M:Red Marker |D:1
+
