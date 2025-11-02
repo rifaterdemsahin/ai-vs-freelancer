@@ -2,133 +2,133 @@ TITLE: GEMINI POST-PRODUCTION PLAN (TIMELINE 5)
 FCM: NON-DROP FRAME
 
 001  001       V     C        01:00:00:05 01:00:07:28 01:00:00:05 01:00:07:28
-M: Hook_S1
+|M: Hook_S1
 |C:ResolveColorRed |D:233
 * FROM CLIP NAME: GEMINI_001
 * COMMENT: SFX: Upbeat digital intro music, quick whooshes. GRAPHIC: Title Card: 'THE 2025 PLAYBOOK'. Fast-cut montage: 1. Icon of a team. 2. Icon of a solo person. 3. Icon of a brain/AI. B-ROLL: Mockup of a 'LinkedIn fantasy' post (fluffy text) dissolving into 'REALITY: 2025' text.
 
 002  001       V     C        01:00:18:08 01:00:34:07 01:00:18:08 01:00:34:07
-M: Background_S2
+|M: Background_S2
 |C:ResolveColorYellow |D:479
 * FROM CLIP NAME: GEMINI_002
 * COMMENT: SFX: Subtle keyboard typing, server hum. GRAPHIC: Lower third: 'SPEAKER NAME - 3X System Builder'. Animated list: 1. IT Contracting (Code icon) 2. Video Production (Film icon) 3. AI Engineering (Neural Net icon). B-ROLL: Show a stylized diagram of 'n8n' (Eneta) automation flow.
 
 003  001       V     C        01:00:34:21 01:01:00:07 01:00:34:21 01:01:00:07
-M: Mistake1_Hiring_S3
+|M: Mistake1_Hiring_S3
 |C:ResolveColorRed |D:766
 * FROM CLIP NAME: GEMINI_003
 * COMMENT: SFX: 'Ka-ching' money sound, money flying. GRAPHIC: Title Card: 'MISTAKE #1: The Old Way'. Animate a pile of money being thrown at icons for 'Designer', 'Editor', 'Ops'. B-ROLL: Screen recording of a project management board (like Asana/Trello) getting filled with too many people and tasks.
 
 004  001       V     C        01:01:00:16 01:01:23:23 01:01:00:16 01:01:23:23
-M: BrutalTruth_S4
+|M: BrutalTruth_S4
 |C:ResolveColorYellow |D:697
 * FROM CLIP NAME: GEMINI_004
 * COMMENT: SFX: Record scratch, dramatic 'thud' or 'boom'. GRAPHIC: Title Card: 'THE BRUTAL TRUTH'. Create a 'VS' graphic: LEFT: 'OLD WAY' with a calendar showing '4 WEEKS' (X'ed out). RIGHT: 'NEW WAY' with a clock showing '4 HOURS'. B-ROLL: A sped-up, chaotic video edit timeline vs. a clean, simple one.
 
 005  001       V     C        01:01:24:00 01:02:07:00 01:01:24:00 01:02:07:00
-M: FailureAnalysis_S5
+|M: FailureAnalysis_S5
 |C:ResolveColorRed |D:1290
 * FROM CLIP NAME: GEMINI_005
 * COMMENT: SFX: Frustrated typing, error buzzers, paper shredder. GRAPHIC: Animate two code blocks (frameworks) failing to connect (like puzzle pieces that don't fit). Show a scale: 'Human Intuition' (light) vs 'Human Overhead' (heavy, crashing down). B-ROLL: Animation of a cash-in-bank graph rapidly declining to zero.
 
 006  001       V     C        01:02:07:12 01:02:32:05 01:02:07:12 01:02:32:05
-M: Mistake2_AI_S6
+|M: Mistake2_AI_S6
 |C:ResolveColorYellow |D:743
 * FROM CLIP NAME: GEMINI_006
 * COMMENT: SFX: Sci-fi 'power-up' sound, robotic voice. GRAPHIC: Title Card: 'MISTAKE #2: The "All AI" Fantasy'. Animate a person handing a 'Video Edit' task to a robot, who just looks confused or drops it. Text: '"M-Skilled Mindset"'. B-ROLL: Mockup of a complex AI tool interface (like ComfyUI) looking overwhelming.
 
 007  001       V     C        01:02:32:11 01:03:20:26 01:02:32:11 01:03:20:26
-M: RealProblem_Me_S7
+|M: RealProblem_Me_S7
 |C:ResolveColorRed |D:1455
 * FROM CLIP NAME: GEMINI_007
 * COMMENT: SFX: Downward 'womp womp' sound, heartbeat, sigh. GRAPHIC: Title Card: 'THE REAL PROBLEM'. Animate a person juggling 'Rough Cuts', 'Scheduling', 'Content' (and dropping them). Show a 'Budget' bar being eaten by a 'Learning Curve' (like Pac-Man). B-ROLL: A 'Studio Closed' sign hanging on a door.
 
 008  001       V     C        01:03:21:08 01:04:04:25 01:03:21:08 01:04:04:25
-M: AI_Solution_S8
+|M: AI_Solution_S8
 |C:ResolveColorYellow |D:1307
 * FROM CLIP NAME: GEMINI_008
 * COMMENT: SFX: 'Aha!' moment chime, 'click' sound, smooth automation hum. GRAPHIC: Title Card: 'THE SHIFT: AI for REPETITIVE Work'. Animate a simple flow: 'Emails' -> [n8n logo] -> 'List'. Show a checklist: 'Email Pipelines' (check), 'Content Scheduling' (check). B-ROLL: Screen recording of an n8n (or Zapier) workflow showing nodes connecting.
 
 009  001       V     C        01:04:05:03 01:04:32:03 01:04:05:03 01:04:32:03
-M: AI_Strategic_S9
+|M: AI_Strategic_S9
 |C:ResolveColorRed |D:810
 * FROM CLIP NAME: GEMINI_009
 * COMMENT: SFX: Brain 'powering up' sound, writing/scribbling. GRAPHIC: Title Card: 'AI for STRATEGIC Work'. Animate: ['Target Audience' + 'Old Videos'] -> [AI Brain] -> 'New Script'. Show logos: 'Canva' + 'DaVinci Resolve'. B-ROLL: Mockup of a text-gen AI (like Claude/ChatGPT) ingesting video files and outputting a formatted script.
 
 010  001       V     C        01:04:32:03 01:05:04:29 01:04:32:03 01:05:04:29
-M: Framework_S10
+|M: Framework_S10
 |C:ResolveColorYellow |D:986
 * FROM CLIP NAME: GEMINI_010
 * COMMENT: SFX: 'Building block' sounds, digital confirmation beep. GRAPHIC: Title Card: 'THE SOLUTION: "Delivery Pilot Framework"'. Animate a central hub 'Framework' connecting 'IT Projects', 'Video Production', 'AI Engineering'. Show logos: 'VS Code', 'Obsidian'. B-ROLL: Screen recording of an Obsidian vault with linked notes and code snippets.
 
 011  001       V     C        01:05:05:06 01:05:54:05 01:05:05:06 01:05:54:05
-M: HumanRole_S11
+|M: HumanRole_S11
 |C:ResolveColorRed |D:1469
 * FROM CLIP NAME: GEMINI_011
 * COMMENT: SFX: Human conversation murmur, 'ding' (good idea). GRAPHIC: Title Card: 'THE ROLE OF HUMANS'. Big text: 'TASTE' & 'JUDGMENT'. Animate a human giving 'emotional feedback' (e.g., a thumbs up/down) to an AI. B-ROLL: Mockup of a team video call, with one person asking 'Pivot this angle?'.
 
 012  001       V     C        01:05:54:28 01:06:46:09 01:05:54:28 01:06:46:09
-M: TeamBuilding_Feedback_S12
+|M: TeamBuilding_Feedback_S12
 |C:ResolveColorYellow |D:1541
 * FROM CLIP NAME: GEMINI_012
 * COMMENT: SFX: '10x' speed-up sound, data processing. GRAPHIC: Animate a process flow: 1. AI (for 'First Draft' / 'Code Review'). 2. HUMAN (for 'Architecture' / 'Edge Cases'). Result: '10x Faster'. B-ROLL: Mockup of a YouTube Analytics dashboard. Highlight 'Impressions', 'CTR', and 'AVD' with glowing boxes.
 
 013  001       V     C        01:06:46:09 01:07:22:13 01:06:46:09 01:07:22:13
-M: MarketShift_S13
+|M: MarketShift_S13
 |C:ResolveColorRed |D:1084
 * FROM CLIP NAME: GEMINI_013
 * COMMENT: SFX: Dramatic 'whoosh' (cheese moving), vinyl scratch, sad trombone. GRAPHIC: Title Card: 'THE MARKET SHIFTED (2024-2025)'. Animate a graph 'Short-Term Contracts' crashing down. Show icons: 'Freelancer' -> 'Government Building' or 'Uber Car'. B-ROLL: Quick montage of news headlines about 'IT Recession'.
 
 014  001       V     C        01:07:22:25 01:08:07:13 01:07:22:25 01:08:07:13
-M: NewStrategy_S14
+|M: NewStrategy_S14
 |C:ResolveColorYellow |D:1338
 * FROM CLIP NAME: GEMINI_014
 * COMMENT: SFX: Machine 'power up', automation 'clink-clank'. GRAPHIC: Title Card: 'NEW STRATEGY: Systems > Headcount'. Show a 'VA' icon being replaced by an 'n8n' (A10) icon. Animate a flow: 'Job Application' -> [n8n Template] -> 'Submitted'. B-ROLL: Screen recording of a freelancer site (like Upwork/Fiverr) with a 'VA' profile, then fade to an n8n dashboard.
 
 015  001       V     C        01:08:07:23 01:08:57:06 01:08:07:23 01:08:57:06
-M: HybridModel_S15
+|M: HybridModel_S15
 |C:ResolveColorRed |D:1483
 * FROM CLIP NAME: GEMINI_015
 * COMMENT: SFX: 'Slow down' tape sound, 'metronome' tick-tock. GRAPHIC: Title Card: 'THE HYBRID TEST'. Big text: 'DO NOT RUSH'. Show a VS. comparison: 'Pure AI' vs 'Human-Guided'. Show a calendar: '1 Video / Week'. B-ROLL: Repeat the YouTube analytics mockup, showing speaker 'studying' the numbers (CTR, AVD).
 
 016  001       V     C        01:08:57:06 01:09:59:03 01:08:57:06 01:09:59:03
-M: ValueProp_S16
+|M: ValueProp_S16
 |C:ResolveColorYellow |D:1857
 * FROM CLIP NAME: GEMINI_016
 * COMMENT: SFX: 'Pivot' whoosh, 'lightbulb' sound. GRAPHIC: Title Card: 'THE PIVOT'. Animate a path: 'DevOps' -> (hits a wall 'Ego') -> pivots to -> 'AI Engineering'. Main Value Prop (Text): 'Help Professionals Get Smarter with AI'. B-ROLL: Animation of a 'DevOps' professional getting stuck, then an 'AI' wave comes and lifts them up.
 
 017  001       V     C        01:09:59:03 01:10:23:05 01:09:59:03 01:10:23:05
-M: Answer_Step1_S17
+|M: Answer_Step1_S17
 |C:ResolveColorRed |D:722
 * FROM CLIP NAME: GEMINI_017
 * COMMENT: SFX: 'Tada!' reveal sound, 'check mark' sound. GRAPHIC: Title Card: 'THE ANSWER: THE HYBRID ENGINE'. Text: 'AI or Humans? (X)'. Text: 'AI + Humans? (CHECK)'. Show 'STEP 1: PLAN WITH AI'. Animate: [AI Brain] -> 'Rational Plan'. [Human Brain] -> 'Irrational' (crossed out).
 
 018  001       V     C        01:10:23:23 01:11:04:09 01:10:23:23 01:11:04:09
-M: Answer_Step2_S18
+|M: Answer_Step2_S18
 |C:ResolveColorYellow |D:1216
 * FROM CLIP NAME: GEMINI_018
 * COMMENT: SFX: 'Shine' sound, human 'hmm' of consideration. GRAPHIC: Title Card: 'STEP 2: HUMAN JUDGMENT'. Big text: 'TASTE' & 'WISDOM'. Animate 'Blame/Shame' (negative input) being transformed (leveraged) into 'Creative Judgment' (positive output). B-ROLL: A person looking at an AI-generated design and making a 'small tweak' (the 'taste').
 
 019  001       V     C        01:11:04:26 01:11:41:15 01:11:04:26 01:11:41:15
-M: Answer_Step3_S19
+|M: Answer_Step3_S19
 |C:ResolveColorRed |D:1099
 * FROM CLIP NAME: GEMINI_019
 * COMMENT: SFX: 'Stamp of approval' sound, 'click' (locking in). GRAPHIC: Title Card: 'STEP 3: CAPTURE IN A FRAMEWORK'. Animate 'Projects', 'Courses', 'Videos', 'IBM Work' all flying into a box labeled '"Delivery Pilot Framework"'. B-ROLL: Mockup of a GitHub repository page for the 'delivery-pilot-framework'.
 
 020  001       V     C        01:11:41:24 01:12:01:13 01:11:41:24 01:12:01:13
-M: Conclusion_S20
+|M: Conclusion_S20
 |C:ResolveColorYellow |D:589
 * FROM CLIP NAME: GEMINI_020
 * COMMENT: SFX: Triumphant 'winner' sound, 'rising' sound. GRAPHIC: Title Card: 'THE WINNING FORMULA'. Show an equation: '[AI: Automate Rationality] + [Human: Amplify Creativity] = WINNER'. Animate 'YouTube', 'Courses', 'Enterprise' growing from this equation.
 
 021  001       V     C        01:12:01:26 01:12:29:28 01:12:01:26 01:12:29:28
-M: FinalEdge_S21
+|M: FinalEdge_S21
 |C:ResolveColorRed |D:842
 * FROM CLIP NAME: GEMINI_021
 * COMMENT: SFX: 'Chart growing' sound, 'click'. GRAPHIC: Title Card: 'YOUR TRUE EDGE'. Animate a small 'YouTube views' graph ticking upwards. Show: 'AI vs Humans' (X). Show: 'AI + Humans + Framework' (CHECK). B-ROLL: A person 'capturing' an idea into an Obsidian/Notion page (the framework).
 
 022  001       V     C        01:12:30:06 01:12:55:23 01:12:30:06 01:12:55:23
-M: CTA_S22
+|M: CTA_S22
 |C:ResolveColorYellow |D:767
 * FROM CLIP NAME: GEMINI_022
 * COMMENT: SFX: 'Click' sound, 'notification' sound. GRAPHIC: Title Card: 'CALL TO ACTION'. Animate a 'spectrum' bar: Left (Human), Right (AI), with a 'You Are Here?' marker. Show a 'GitHub' logo and 'Free AI Courses' text. B-ROLL: Screen recording of the GitHub repo and a course landing page with a 'FREE' coupon code.
