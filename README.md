@@ -1,5 +1,6 @@
 Visible > https://rifaterdemsahin.github.io/ai-vs-freelancer/
 
+[![AI vs freelancer](https://img.youtube.com/vi/YZqcACObMws/hqdefault.jpg)](https://youtu.be/YZqcACObMws)
 
 # 🚀 Delivery Pilot Structure
 
